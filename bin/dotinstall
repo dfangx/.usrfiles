@@ -1,0 +1,32 @@
+#!/bin/bash
+
+dir=~/.dotfiles
+dir_old=~/dotfiles_old
+files=$(ls $dir)
+exclude=bin
+echo "Creating backup in ~/dotfiles_old"
+mkdir -p $dir_old
+echo "done"
+
+for file in $files
+do
+
+	echo "Moving $file to $dir_old"
+	mv ~/.$file $dir_old/
+
+	for excluded in $exclude
+	do
+		if [[ $file == $exclude  ]]
+		then
+			flag=1
+			break
+		fi
+	done
+	
+	if [[ $flag != 1  ]]
+	then
+		echo "Creating symlink to $file in $HOME"
+		ln -s $dir/$file ~/.$file
+	fi
+	flag=0
+done
