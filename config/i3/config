@@ -245,8 +245,7 @@ default_border none
 hide_edge_borders both
 
 #Startup Programs
-
-exec ~/scripts/autostart
+exec autostart
 #exec /usr/local/bin/hdmi_toggle > ~/documents/logs/sound_logs
 #exec urxvt 							#URxvt Terminal
 exec_always --no-startup-id feh --bg-fill ~/pictures/wallpapers/"deep-space.jpg" 	#Feh for Wallpaper

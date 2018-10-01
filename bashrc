@@ -20,3 +20,4 @@ fi
 
 #eval "$(dircolors -b ~/.dir_colors)"
 neofetch
+

@@ -74,3 +74,6 @@ set history=100
 set background=dark
 colorscheme cobalt
 set number
+
+let g:powerline_pycmd="py3"
+set laststatus=2

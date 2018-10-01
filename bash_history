@@ -1,198 +1,3 @@
-la
-rm -r xfce4
-cd /etc
-cat issue
-cd
-vim .bashrc
-refresh
-sysupdate
-cd documents/build/skypeforlinux
-cd documents/build/skypeforlinux*
-makepkg -si
-makepkg -si
-cat PKGBUILD
-cd ..
-cd firefox*
-la
-makepkg -si
-cat PKGBUILD
-playonlinux
-la
-cd
-la
-cd .steampath
-lal
-la .steam
-la .steam/sdk32
-rm .steampath
-la
-cd .urxvt
-la
-lal
-feh urxv*
-feh urxvtd-cyrus-laptop
-urxvtd-cyrus-laptop
-./urxvtd-cyrus-laptop
-laurxvtd-cyrus-laptop
-cd laurxvtd-cyrus-laptop
-cd
-la
-la
-cd .desktop
-cd desktop
-la
-cd ..
-cat documents/keepass/mp
-vim .config/neofetch/config
-vim .config/neofetch/config*
-vim .config/neofetch/config*
-cd st
-cd documents/build
-rm -h
-rm --help
-la
-rm f* sh* sk* sl*
-rm f* sh* sk* sl* t*
-rm -r f* sh* sk* sl* t*
-sudo rm -r f* sh* sk* sl* t*
-la
-rm -r spotify
-la
-sysupdate
-cd st
-la
-vim .config/i3/config
-cd
-vim .config/i3/config
-vim .config/i3/config
-vim .config/i3blocks/config
-restart
-pkginstall polybar
-netctl
-netctl-auto
-netctl-auto switch-to Chicken-Pot-Pifi
-sudo netctl-auto switch-to Chicken-Pot-Pifi
-sudo netctl-auto switch-to "Chicken Pot Pifi"
-cd documents/build
-git clone https://aur.archlinux.org/polybar.git
-cd polybar
-makepkg -si
-makepkg -si
-man polybar
-cd
-cd .config
-la
-cd polybar
-man polybar
-cd
-la
-polybar --ehlp
-polybar --help
-la
-find polybar
-find .polybar
-cd .config
-la
-polybar
-la /etc/polybar
-la /etc
-la
-polybar -v
-man polybar
-polybar i3bar
-polybar ~/.config/i3blocks/config
-man polybar
-polybar i3blocks
-pkgremove polybar
-sysclean
-pkginstall i3bar
-la
-cd i3status
-la
-vim config
-cd ..
-vim i3blocks/config
-pkginstall vim
-vim i3blocks/config
-vim i3blocks/config
-exit
-cd documents/build
-cd polybar
-cd
-vim .config/i3/config
-vim .config/i3/config
-vim .config/i3/config
-vim .config/i3blocks/config
-vim .config/i3blocks/config
-exit
-exit
-mkdir -h
-mkdir --help
-exit
-cat documents/keepass/mp
-cd documents/job*/sup*/2019
-la
-la
-rm cover_letter.pdf
-rm resume.pdf
-cd .vim
-la
-cd
-cd .vim
-la
-cd plugins
-la
-cd vim airline
-cd vim-airline
-la
-cd ..
-la
-cd ..
-la
-la autoload
-cd
-cd .vimrc
-cat .vimrc
-vim .vimrc
-vim .vimrc
-cd .vim/autoload
-la
-la
-rm plug.vim
-cd ..
-la
-cd plugins
-la
-vim :h
-vim
-exit
-la
-exit
-echo $PATH
-exit
-cd .vim
-la
-rm -r plugins
-l
-lal
-vim -v
-echo $VIMRUNTIME
-LA
-la
-cat swap
-la swap
-la colors
-vim --version
-vim --version | less
-git submodule
-cd
-la
-la.dir_colors
-cat .dir_colors
-la
-hp-setup
-la
-cat .bash_logout
 cat .bash_history
 la
 cat .pulse cookie
@@ -497,4 +302,199 @@ cd .dotfiles
 la
 vim bin
 vim .gitignore
+exit
+cd documents/job*/sup*/2019/quip*
+la
+mv 20181007_summer-2019-computer* 20181007_cse_summer-2019-computer-science-engineering_95635.pdf
+la
+mv 20181007-summer-2019-mathematician-cryptanalyst-and-data-scientist_95639.pdf 20181007_cse_summer-2019-mathematician-cryptanalyst-and-data-scientist_95639.pdf
+la
+exit
+dotinstall
+la
+la .dotfiles
+cd .dotfiles/bin
+la
+vim dotinstall
+dotinstall
+cd
+la
+cd .dotfiles
+la
+touch .gitignore
+la config
+la
+la config
+la procps
+la config/procps
+cd config
+la
+rm procps
+rm -r procps
+la
+la pulse
+la systemd/users
+la systemd/user
+la systemd/user/*
+la
+cat user-dirs.dirs
+cat user-dirs.locale
+cat user-dirs.dirs
+git remote add origin git@github.com:DragonFangXX/dotfiles
+la
+cd ..
+la
+git add *
+rm -r .git
+sudo rm -r .git
+git init
+git remote add origin git@github.com:DragonFangXX/dotfiles
+cd vim
+la
+cd plugins
+la
+rm -r *
+sudo rm -r *
+cd
+cd .dotfiles
+la
+git add *
+git commit -m "added dotfiles from local drive"
+git config --global cyrusng
+git config --global DragonFangXX
+git config
+git config --global user.name cyrusng
+git commit -m "added dotfiles from local drive"
+git push
+git push origin master
+git push origin master
+la
+sudo rm -r .git
+la
+git init
+git config --global user.email cyrus.ng59@gmail.com
+git add *
+git remote add origin https://github.com/DragonFangXX/dotfiles
+git commit -m "added dotfiles from local drive"
+la
+git push -u origin master
+git push -u origin master
+git push -u origin master
+touch README.md
+echo # dotfiles >> README.md
+la
+cat READ*
+echo "# dotfiles" >> README.md
+cat READ*
+git push -u origin master
+la
+cd
+la
+la
+la
+la dotfiles
+la .dotfiles
+vim .dotfiles/bin/dotinstall
+la
+mv dotfiles _dotfiles
+la
+la _dotfiles/config
+la _dotfiles/config/skypeforlinux
+rm _dotfiles
+rmdir _dotfiles
+rm -r _dotfiles
+la
+la .pki
+la .pki/*
+cat .pki/*/*
+la .npm
+la .npm/_logs
+cat .npm/_logs/*
+cat .npm/_logs/* | less
+la
+cat .gitconfig
+git config
+git config --global
+la
+cat .gitconfig
+la
+cd .PlayOnLinux
+la
+la PlayOnLinux*
+la "PlayOnLinux's virtual drives"
+cd "PlayOnLinux's virtual drives"
+lal
+rm PlayOnLinux*
+la
+rm .PlayOnLinux
+la
+la
+ls
+la dotfiles_old
+cd .dotfiles
+la
+cd bin
+la
+vim dotinstall
+la
+cd
+vim .config/i3/config
+cd .vim
+la
+la plugins
+la
+la
+rm -r plugins
+vim pack
+mkdir pack/opt mkdir/start
+mkdir pack/opt pack/start
+la
+mkdir pack/opt/ pack/start/
+mkdir pack
+mkdir pack/opt/ pack/start/
+la
+la pack
+cd pack
+mkdir plugins
+mv * plugins
+la
+la plugins
+pip
+pip install powerline-status
+pip remove
+pip --help
+pip uninstall powerline-status
+pkginstall powerline
+pkginstall powerline powerline-fonts
+pkginstall powerline-vim
+vim
+vim .vimrc
+cd
+vim .vimrc
+vim .vimrc
+vim
+pkginstall powerline-vim
+vim
+vim .vimrc
+vim .vimrc
+rm python-pip
+pkgremove python-pip
+sysclean
+vim .bashrc
+refresh
+exit
+cd
+cd .config
+cd .config/i3
+cd
+cd /usr/bin
+la
+cd hp-info
+cd /sys/class
+la
+cd drm
+la
+cd
+vim .bashrc
+refresh
 exit
