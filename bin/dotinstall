@@ -3,17 +3,13 @@
 dir=~/.dotfiles
 dir_old=~/dotfiles_old
 files=$(ls $dir)
-exclude=bin
+exclude=README.md
 echo "Creating backup in ~/dotfiles_old"
 mkdir -p $dir_old
 echo "done"
 
 for file in $files
 do
-
-	echo "Moving $file to $dir_old"
-	mv ~/.$file $dir_old/
-
 	for excluded in $exclude
 	do
 		if [[ $file == $exclude  ]]
@@ -23,10 +19,23 @@ do
 		fi
 	done
 	
-	if [[ $flag != 1  ]]
+	if [[ $flag == 1  ]]
 	then
-		echo "Creating symlink to $file in $HOME"
-		ln -s $dir/$file ~/.$file
+		echo "Skipping $file..."
+	else
+
+		if [[ $file == bin ]]
+		then
+			echo "Moving $file to $dir_old"
+			mv ~/$file $dir_old/
+			echo "Creating symlink to $file in $HOME"
+			ln -s $dir/$file ~/$file
+		else
+			echo "Moving $file to $dir_old"
+			mv ~/.$file $dir_old/
+			echo "Creating symlink to $file in $HOME"
+			ln -s $dir/$file ~/.$file
+		fi	
 	fi
 	flag=0
 done
