@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PATH=$PATH:~/.dotfiles/bin
+PATH=$PATH:~/bin
 export BROWSER="firefox-beta"
 
 curDate="[\d]"
