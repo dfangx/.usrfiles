@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/arch/cyrusng/.config'
 let g:netrw_dirhist_2='/home/arch/cyrusng/.config/conky/conf'
 let g:netrw_dirhist_3='/home/arch/cyrusng/.config/i3blocks/i3blocklets'
 let g:netrw_dirhist_4='/home/arch/cyrusng/.dotfiles/bin'
+let g:netrw_dirhist_5='/home/arch/cyrusng/.dotfiles/config/gtk-3.0'

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ext=$1
+dir=$2
+cd $dir
+for f in *
+do
+
+	mv $f ${f}.$ext
+done
+
