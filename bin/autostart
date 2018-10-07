@@ -5,10 +5,10 @@ exec 2>&1
 
 echo "$(date)=============================="
 compton -b
-st &							#URxvt Terminal
+termite &							#URxvt Terminal
 keepass &						#Keepass Password Manager
 
-conky -c ~/.config/conky/conf/weather.conf &
+#conky -c ~/.config/conky/conf/weather.conf &
 conky -c ~/.config/conky/conf/clock.conf &
 conky -c ~/.config/conky/conf/disk.conf &
 conky -c ~/.config/conky/conf/system.conf &

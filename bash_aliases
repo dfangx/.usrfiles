@@ -34,3 +34,4 @@ alias pkginstall="sudo pacman -Syu $1"
 alias pkgremove="sudo pacman -Rsc $1"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias cppwd="xclip -selection c -r ~/documents/keepass/mp"

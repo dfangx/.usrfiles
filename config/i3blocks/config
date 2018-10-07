@@ -150,7 +150,7 @@ command=date '+%Y-%m-%d'
 interval=1
 separator=false
 [time]
-label=  
+label=
 command=date '+%H:%M:%S'
 interval=1
 
