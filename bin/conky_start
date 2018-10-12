@@ -1,0 +1,12 @@
+#!/bin/bash
+
+conky -c ~/.config/conky/conf/weather.conf &
+conky -c ~/.config/conky/conf/clock.conf &
+conky -c ~/.config/conky/conf/disk.conf &
+conky -c ~/.config/conky/conf/system.conf &
+conky -c ~/.config/conky/conf/fs.conf &
+conky -c ~/.config/conky/conf/battery.conf &
+conky -c ~/.config/conky/conf/cpu.conf &
+conky -c ~/.config/conky/conf/network.conf &
+conky -c ~/.config/conky/conf/memory.conf &
+

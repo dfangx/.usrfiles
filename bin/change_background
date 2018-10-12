@@ -1,0 +1,4 @@
+#!/bin/bash
+pic_dir=~/pictures/wallpapers
+file=$(ls $pic_dir | shuf -n 1)
+feh --bg-fill $pic_dir/$file

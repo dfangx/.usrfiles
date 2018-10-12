@@ -1,0 +1,10 @@
+#!/bin/bash
+
+title="$(playerctl metadata title)"
+artist="$(playerctl metadata artist)"
+
+if [ -z $title ] || [ -z $artist ]; then
+	echo "No song is playing right now"
+else
+	echo "$title - $artist"
+fi

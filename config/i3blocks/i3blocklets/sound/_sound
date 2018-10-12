@@ -53,8 +53,9 @@ volume() {
 vol=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | grep -o -P '[0-9]*(\.[0-9]*)?(?=%)')
 format() {
   perl_filter='if (/.*\[(\d+%)\] (\[(-?\d+.\d+dB)\] )?\[(on|off)\]/)'
-  perl_filter+='{CORE::say $4 eq "off" ? "" : "'
-  perl_filter+=$(echo " ")
+  perl_filter+='{CORE::say $4 eq "off" ? " " : "'
+#  perl_filter+=$(echo " ")
+perl_filter+=$([$1 -ge 50%] && echo " "|| echo " ")
   # If dB was selected, print that instead
   perl_filter+=$([[ $STEP = *dB ]] && echo '$3' || echo '$1')
   perl_filter+='"; exit}'

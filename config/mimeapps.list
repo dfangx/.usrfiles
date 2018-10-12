@@ -24,3 +24,4 @@ application/xhtml+xml=userapp-Firefox-TEBHLZ.desktop;
 application/x-extension-xhtml=userapp-Firefox-TEBHLZ.desktop;
 application/x-extension-xht=userapp-Firefox-TEBHLZ.desktop;
 application/pdf=okularApplication_pdf.desktop;libreoffice-draw.desktop;firefox-beta-bin.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-draw.desktop;

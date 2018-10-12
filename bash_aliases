@@ -1,6 +1,8 @@
-alias ls="ls --color"
+alias ls="ls --color=auto"
 alias la="ls -a"
 alias lal="ls -al"
+alias ll="ls -l"
+
 #Shell Maintenance
 alias refresh="clear && source ~/.bashrc"
 alias edtalias="vim ~/.bash_aliases"
@@ -25,13 +27,14 @@ alias mvspacer="i3-msg move workspace to output right"
 
 #System maintenance
 alias powreport="sudo powertop --html && firefox-beta ~/powertop.html"
-alias sysbackup="sudo tar cvpzf arch-linux-backup-$(exec date +%F).tgz ~/.bash_aliases ~/.bashrc ~/.config ~/.dir_colors ~/documents ~/downloads ~/pictures ~/.vimrc ~/.xinitrc ~/.Xresources /etc/sudoers.d /etc/X11/xorg.conf.d/40-libinput.conf /etc/grub.d/40_custom /usr/local/bin /etc/udev/rules.d /etc/systemd/system /etc/netctl ~/1_accuweather"
+alias sysbackup="sudo tar cvpzf arch-linux-backup-$(exec date +%F).tgz ~/ /etc/sudoers.d /etc/X11/xorg.conf.d/40-libinput.conf /etc/grub.d/40_custom /usr/local/bin /etc/udev/rules.d /etc/systemd/system /etc/netctl"
 alias sysrestore="sudo tar -xvpzf $1 -C $2 --numeric-owner"
 alias sysupdate="curl -s 'https://www.archlinux.org/mirrorlist/?country=CA&country=US&protocol=https&use_mirror_status=on' | sed -e 's/^#Server/Server/' -e '/^#/d' |rankmirrors -n 6 - | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Syu && cower -fdu --target ~/documents/build"
-#alias pkgbuild="cd ~/documents/build/$2"
+alias createusb="sudo dd bs=4M if=$1 of=$2 status=progress oflag=sync"
 alias sysclean="sudo pacman -Rns $(pacman -Qtdq)"
 alias pkginstall="sudo pacman -Syu $1"
 alias pkgremove="sudo pacman -Rsc $1"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias cppwd="xclip -selection c -r ~/documents/keepass/mp"
+alias chgbkgrd="feh --bg-fill $1"

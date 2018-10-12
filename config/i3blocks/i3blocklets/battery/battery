@@ -1,0 +1,31 @@
+#!/bin/bash
+
+BAT_PATH=/sys/class/power_supply/BAT0
+
+bat=$(cat ${BAT_PATH}/capacity)
+state=$(cat ${BAT_PATH}/status)
+
+if [ $state = "Charging" ]; then
+	label=""
+else
+	if [ $bat -le 10 ]; then
+		label=""
+		color="#ff0000"
+	elif [ $bat -le 25 ]; then
+		label=""
+		color="#ff0000"
+	elif [ $bat -le 50 ]; then
+		label=" "
+		color="#ffff00"
+	elif [ $bat -le 75 ]; then
+		label=""
+		color="#ffff00"
+	else
+		label=""
+		color="#00ff00"
+	fi
+fi
+
+echo $label "<span foreground='#ffffff'>$bat%</span>"
+echo $label $bat%
+echo $color

@@ -8,8 +8,6 @@
 PATH=$PATH:~/bin
 export BROWSER="firefox-beta"
 
-LS_COLORS="*.tgz=1;31:di=1;37"
-export LS_COLORS
 curDate="[\d]"
 machInfo="\u@\h"
 end="\W\$ "
@@ -20,6 +18,6 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-#eval "$(dircolors -b ~/.dir_colors)"
+eval "$(dircolors -b ~/.dircolors)"
 neofetch
 
