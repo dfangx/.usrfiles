@@ -1,0 +1,26 @@
+#!/bin/bash
+
+dir=~/.config/i3blocks/i3blocklets/system
+
+cpu_perc=$($dir/cpu_usage)
+home_disk=$($dir/disk /home)
+root_disk=$($dir/disk /)
+load_avg=$($dir/load_average)
+temp=$($dir/temperature)
+
+current_points=$(("$cpu_perc" + "$home_disk" + "$root_disk" + "$load_avg" + "$temp"))
+
+
+if [ "$current_points" -ge 12 ]; then
+	color="#ff0000"
+	label=""
+elif [ "$current_points" -ge 9 ]; then
+	color="#ffff00"
+	label=""
+else
+	color="#00ff00"
+	label=""
+fi
+
+echo " <span foreground='$color'>$label</span>"
+echo " <span foreground='$color'>$label</span>"

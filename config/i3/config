@@ -146,7 +146,6 @@ assign [class="(?i)soffice"] $ws3
 assign [class="libreoffice"] $ws3
 assign [class="(?i)steam"] $ws6
 assign [class="(?i)slack"] $ws5
-
 ##############################App Keybinds#################3##############################
 bindsym $mod+Return exec $term
 
@@ -201,7 +200,11 @@ bindsym XF86MonBrightnessDown exec xbacklight - 5; exec pkill -RTMIN+2 i3blocks
 bindsym XF86KbdBrightnessUp exec /usr/local/bin/kb-light.py + 1
 bindsym XF86KbdBrightnessDown exec /usr/local/bin/kb-light.py - 1
 
+##############################Status Bar#################################################
 bindsym $mod+mod1+t exec ~/.config/i3blocks/i3blocklets/time/change_state  
+bindsym $mod+mod1+u exec ~/.config/i3blocks/i3blocklets/yad/yad_script update
+
+bindsym $mod+mod1+n exec ~/.config/i3blocks/i3blocklets/yad/yad_script network
 ##############################Miscellaneous Keybinds######################################
 bindsym --release $mod+shift+s exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/pictures/screenshots/' 
 bindsym $mod+shift+a sticky toggle
@@ -227,6 +230,7 @@ exec --no-startup-id $term --name dropdown
 for_window [instance="(?i)dropdown"] move scratchpad
 for_window [instance="(?i)dropdown"] resize set 800 300
 
+for_window [class="(?i)yad"] floating enable
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode

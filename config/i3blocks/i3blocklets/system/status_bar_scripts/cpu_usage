@@ -41,16 +41,17 @@ close(MPSTAT);
 $cpu_usage eq -1 and die 'Can\'t find CPU information';
 
 # Print short_text, full_text
-#printf "%.2f%%\n", $cpu_usage;
+printf "%.2f%%\n", $cpu_usage;
+printf "%.2f%%\n", $cpu_usage;
 
 # Print color, if needed
 if ($cpu_usage >= $t_crit) {
-    print 3;
+    print "#FF0000\n";
     exit 33;
 } elsif ($cpu_usage >= $t_warn) {
-    print 2;
+    print "#FFFC00\n";
 } else {
-    print 1
+    print "#00FF32\n"
 }
 
 exit 0;

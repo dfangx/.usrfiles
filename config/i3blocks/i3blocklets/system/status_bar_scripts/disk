@@ -14,27 +14,28 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-load="$(cut -d ' ' -f1 /proc/loadavg)"
-cpus="$(nproc)"
+DIR="${BLOCK_INSTANCE:-$HOME}"
+ALERT_LOW="${1:-10}" # color will turn red under this value (default: 10%)
 
-# full text
-#echo "$load"
-#echo $cpus
-# short text
-#echo "$load"
+df -h -P -l "$DIR" | awk -v alert_low=$ALERT_LOW '
+/\/.*/ {
+	# full text
+	print $4
 
-# color if load is too high
-awk -v cpus=$cpus -v cpuload=$load '
-    BEGIN {
-        if (cpus <= cpuload) {
-            print 3;
-            exit 33;
-        } 
-	else if (cpus <= cpuload/2){
-		print 2;
-	}	
-	else{
-		print 1;
+	# short text
+	print $4
+
+	use=$5
+
+	# no need to continue parsing
+	exit 0
+}
+
+END {
+	gsub(/%$/,"",use)
+	if (100 - use < alert_low) {
+		# color
+		print "#FF0000"
 	}
-    }
+}
 '

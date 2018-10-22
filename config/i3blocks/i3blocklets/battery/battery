@@ -11,9 +11,11 @@ else
 	if [ $bat -le 10 ]; then
 		label=""
 		color="#ff0000"
+		exec "Battery" "Critical low battery. Please plug in your charger"
 	elif [ $bat -le 25 ]; then
 		label=""
 		color="#ff0000"
+		exec notify-send "Battery" "Low battery. Please plug in your charger"
 	elif [ $bat -le 50 ]; then
 		label=" "
 		color="#ffff00"

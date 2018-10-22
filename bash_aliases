@@ -19,17 +19,17 @@ alias restart="systemctl reboot"
 
 #Multiple outputs
 alias hdmidflt="xrandr --auto"
-alias hdmi2mirror="xrandr --output HDMI2 --auto --same-as eDP1"
-alias hdmi2right="xrandr --output HDMI2 --auto --right-of eDP1"
-alias hdmi2left="xrandr --output HDMI2 --auto --left-of eDP1"
-alias mvspacel="i3-msg move workspace to output left"
-alias mvspacer="i3-msg move workspace to output right"
+alias hdmi2mirror="xrandr --output HDMI2 --auto --same-as eDP1 --mode 1920x1080"
+alias hdmi2right="xrandr --output HDMI2 --auto --right-of eDP1 --mode 1920x1080"
+alias hdmi2left="xrandr --output HDMI2 --auto --left-of eDP1 --mode 1920x1080"
+alias mvspacel="i3-msg move workspace to output left --mode 1920x1080"
+alias mvspacer="i3-msg move workspace to output right --mode 1920x1080"
 
 #System maintenance
 alias powreport="sudo powertop --html && firefox-beta ~/powertop.html"
 alias sysbackup="sudo tar cvpzf arch-linux-backup-$(exec date +%F).tgz ~/ /etc/sudoers.d /etc/X11/xorg.conf.d/40-libinput.conf /etc/grub.d/40_custom /usr/local/bin /etc/udev/rules.d /etc/systemd/system /etc/netctl"
 alias sysrestore="sudo tar -xvpzf $1 -C $2 --numeric-owner"
-alias sysupdate="curl -s 'https://www.archlinux.org/mirrorlist/?country=CA&country=US&protocol=https&use_mirror_status=on' | sed -e 's/^#Server/Server/' -e '/^#/d' |rankmirrors -n 6 - | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Syu && cower -fdu --target ~/documents/build"
+alias sysupdate="sudo pacman -Syu && cower -fdu --target ~/documents/build && ~/bin/aur_install && pkill -RTMIN+4 i3blocks"
 alias createusb="sudo dd bs=4M if=$1 of=$2 status=progress oflag=sync"
 alias sysclean="sudo pacman -Rns $(pacman -Qtdq)"
 alias pkginstall="sudo pacman -Syu $1"

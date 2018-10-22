@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dir=~/documents/build
+
+if [ $(ls $dir | wc -l) -gt 0 ]; then
+	for f in $dir/*; do
+		cd $f
+		makepkg -si
+	done
+	
+	cd $dir
+	sudo rm -r *
+else
+	echo "No AUR packages"
+fi

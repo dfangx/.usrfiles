@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
 
 # This program is free software: you can redistribute it and/or modify
@@ -14,28 +14,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-DIR="${BLOCK_INSTANCE:-$HOME}"
-ALERT_LOW="${1:-10}" # color will turn red under this value (default: 10%)
+DIR="$1"
+warn=75
+crit=90
+used_perc=$(df -h -P -l "$DIR" | awk '/\/.*/ {print$5}')
+used_perc="$(echo $used_perc | grep -o "[0-9]*")"
 
-df -h -P -l "$DIR" | awk -v alert_low=$ALERT_LOW '
-/\/.*/ {
-	# full text
-	print $4
-
-	# short text
-	print $4
-
-	use=$5
-
-	# no need to continue parsing
-	exit 0
-}
-
-END {
-	gsub(/%$/,"",use)
-	if (100 - use < alert_low) {
-		# color
-		print "#FF0000"
-	}
-}
-'
+if [ "$used_perc" -ge "$crit" ]; then
+	echo 3
+elif [ "$used_perc" -ge "$warn" ]; then
+	echo 2
+else
+	echo 1
+fi

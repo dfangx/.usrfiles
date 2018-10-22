@@ -10,8 +10,8 @@ INTERFACE="${BLOCK_INSTANCE:-wlan0}"
 # connection (think desktop), the corresponding block should not be displayed.
 if ! [ -e "/sys/class/net/${INTERFACE}/operstate" ] || ! [ "`cat /sys/class/net/${INTERFACE}/operstate`" = "up" ]
 then
-    	echo " 0K  0K  "
-    	echo " 0K  0K  "
+    	echo "   "
+    	echo "   "
     	echo "#898989"
     	exit 0
 fi
@@ -30,14 +30,6 @@ elif [[ $QUALITY -gt 0 ]]; then
 else
     	color="#898989"
 fi
-
-#if [ "${SSID_NAME}" != "" ]; then
-#	echo -n " "
-#	echo -n " "
-#else
-#	echo -n " "
-
-#fi
 
 # path to store the old results in
 path="/dev/shm/$(basename $0)-${INTERFACE}"
@@ -76,10 +68,6 @@ tx_rate=$(( $tx_diff / $time_diff ))
 # shift by 10 bytes to get KiB/s. If the value is larger than
 # 1024^2 = 1048576, then display MiB/s instead
 
-
-
-# incoming
-#echo -n " "
 rx_kib=$(( $rx_rate >> 10 ))
 if [ "$rx_kib" -gt 0 ]; then
 	down_color="#00ff00"
@@ -87,28 +75,12 @@ else
 	down_color="#898989"
 fi
 	
-#if [[ "$rx_rate" -gt 1048576 ]]; then
-#  printf '%sM' "`echo "scale=1; $rx_kib / 1024" | bc`"
-#else
-#  echo -n "${rx_kib}K"
-#fi
-
-#echo -n " "
-
-# outgoing
-#echo -n " "
 tx_kib=$(( $tx_rate >> 10 ))
 if [ "$tx_kib" -gt 0 ]; then
 	up_color="#00ff00"
 else
 	up_color="#898989"
 fi
-
-#if [[ "$tx_rate" -gt 1048576 ]]; then
-#  printf '%sM' "`echo "scale=1; $tx_kib / 1024" | bc`"
-#else
-#  echo -n "${tx_kib}K"
-#fi
 
 echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
 echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
