@@ -1,500 +1,500 @@
-acpi -v
-acpi -V
-acpi -V | grep [0-9]
-acpi -V | grep [0-9]*
-acpi -V | grep [0-9][0-9]
-man acpi
-acpi -b
-acpi -b
-acpi
-man acpi
-man acpi -ba
-acpi -ba
-man acpi -ba
-acpi -bi
-acpi -bi
-acpi -t
-edtalias
-sudo pacman -Sup
-sudo pacman -Sup
-sudo pacman -Syup --print-format="%n %n"
-sudo pacman -Syup --print-format="%n %n"
-sudo pacman -Syup --print-format="%n %n | grep -v "$::" 
-sudo pacman -Syup --print-format="%n %n | grep -v "^::" 
-sudo pacman -Syup --print-format="%n %n" | grep -v "^::" 
-sudo pacman -Syup --print-format="%n %n" | grep -v "^::" 
-sudo pacman -Syup --print-format="%n %n" | grep -v "^:: ^ " 
-man pacman
-sudo pacman -Syup --print-format="%n %v" | grep -v "^:: ^ " 
-sudo pacman -Syup --print-format="%n %v" | grep -v "^::"
-checkupdates --print-format "%n"
-pacman -Syup --print-format="%n %v" | grep -v "^::"
-pacman -Syp --print-format="%n %v" | grep -v "^::"
-pacman -Sup --print-format="%n %v" | grep -v "^::"
-yad --text-info --filename=<(pacman -Sup --print-format="%n %v" | grep -v "^::")
-notify-send "Test"
-xrandr
-xrandr --auto
-cd onedrive/Year\ 3\ \(2018-19\)/cisc327/a2/GGGreatest-FrontEnd/
-git status
-git reset --hard
-git pull
-git pull origin master
-git branch
-git reset --hard
-git checkout master
-git branch -D cyrus_sell-ticket
-git branch cyrus_sell-ticket
-git checkout cyrus_sell-ticket
-git pull
-git branch --set-upstream-to=origin/<branch> cyrus_sell-ticket
-git branch --set-upstream-to=origin/cyrus_sell-ticket
-git pull
-git pull
-git pull origin master
-git reset --hard 
-git checkout master
-git branch -D cyrus_sell-ticket
-git checkout -b cyrus_sell-ticket
-git pull origin master
-git status
-git branch
-git push
-git push --set-upstream origin cyrus_sell-ticket
-git pull origin master
-git push
-git push --set-upstream origin cyrus_sell-ticket
-git pull origin master
-cd
-cat temp
-cat temp
-rm temp
-ls
-la
-cd .android/
-ls
-la
+cd build
+cat ../tests/createService/givenLoginPlannerCreateserviceChangeTicketSameDay_createServiceButDoesNotChangeTicket.txt | java UserInterface ../valid_services_list_file.txt ./tsf
+vim ../tests/createService/givenLoginPlannerCreateserviceChangeTicketSameDay_createServiceButDoesNotChangeTicket.txt
+cat ../tests/createService/givenLoginPlannerCreateserviceChangeTicketSameDay_createServiceButDoesNotChangeTicket.txt | java UserInterface ../valid_services_list_file.txt ./tsf
+java UserInterface ../valid_services_list_file.txt ./tsf
 cd ..
-rm .android/
-la
-rmdir .android/
-la
-yad form
-yad form --field="password"
-yad --form --field="password"
-yad --form --field=username --field="password --separator="\n"
-yad --form --field=username --field="password" --separator="\n"
-df
-df --help
-cd /
-df
-df /dev/sda7
-df -h -P -l
-df -h -P -l .
-cd
-df -h -P -l .
-df -h -P -l . | awk {print $4}
-df -h -P -l . | awk '{print $4}
-df -h -P -l . | awk '{print $4}'
-df -h -P -l . | awk '{print $5}'
-df -h -P -l . | awk '/\/.*/ {print $5}'
-df -h -P -l . | awk '/\/.*/ {print $4}'
-df -h -P -l . | awk '/\/.*/ {print $4 $5}'
-df -h -P -l . | awk '/\/.*/ {print $4  $5}'
-df -h -P -l . | awk '/\/.*/ {print $4 use=$5}'
-df -h -P -l . | awk '/\/.*/ {use=$4}'
-echo $4
-echo $use
-vim .config/i3/config
-df -h -P -l .
-df -h -P -l
-df -h -P -l | awk '/\/.*/ {use=$4}'
-df -h -P -l . | awk '/\/.*/ {use=$5}'
-df -h -P -l . | awk '/\/.*/ {print $5}'
-df -h -P -l . | awk '/\/.*/ {print $3}'
-df -h -P -l . | awk '/\/.*/ {print $2}'
-df -h -P -l . | awk '/\/.*/ {used=$5}'
-nproc
-yad --help
-yad --text-info CPU
-yad --entry "CPU"
-yad --text-info "CPU"
-yad --print
-yad --entry ~/.config/i3blocks/i3blocklets/network/yad/bandwidth
-~/.config/i3blocks/i3blocklets/network/yad/bandwidth
-~/.config/i3blocks/i3blocklets/network/yad/ssid | yad
-~/.config/i3blocks/i3blocklets/network/yad/ssid | yad --text-entry
-cd documents/build/
-mkdir 1
-mkdir 2
-mkdir 1
-cd 1
-touch 2
-touch 3
-cd ..
-cd
-la
-cd documents/build/
+cat ./tests/createService/*
 ls
-rm -r *
-cd
-vim bin/aur_install 
-cd bin
-./aur_install 
-vim bin/aur_install 
-vim aur_install 
-./aur_install 
-edtalias
-refresh
-conky -c ~/.config/conky/conf/battery.conf 
-kill 27353
-pacman -S --help
-man pacman
-man checkupdates
-checkupdate --h
-checkupdate --help
-checkupdates --help
-pacman -Sp
-pacman -Sup
-sudo pacman -Syu
+la
+cat .gitignore
+git status
+ls
+git checkout -b cyrus_script-updates
+git status
+git commit -am "Updated script. You now need to specify path to the java files"
+git status
+git push
+git push --set-upstream origin cyrus_script-updates
+ls
+vim run_test
+vim run_test
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+./run_test
+vim run_test
+git status
+git commit -am "Added check to ensure program path argument is specified"
+git push
+git status
+git pull origin master
+igt pull origin master
+git pull origin master
+ls
+rm -r build black_box_test_results/
+./run_tests
+./run_test
+ls
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+cd ..
+cd ..
+cd a2/GGGreatest-FrontEnd/
+git pull origin master
+cd ..
+cd ..
+cd a3/TestHarness/
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+cd black_box_test_results/
+ls
+ls 2018-10-
+ls 2018-10-c
+ls 2018-10-cancelTicket/
+cd ..
+cat tests/sellTicket/givenTicketNumberNotNumber_doesNotSellTicket.txt 
+vim run_test 
+echo hello\nworld
+echo hello$\nworld
+echo hello"$\n"world
+echo hello'$\n'world
+echo hello$'\n'world
+vim run_test 
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+ls black_box_test_results/2018-10-cancelTicket/
+cat black_box_test_results/2018-10-cancelTicket/24-12\:36\:52-Report 
+ls
+vim run_test 
+vim compare_test
+ls
+vim run_test
+rm -r black_box_test_results/
+rm -r build/
+ls
+./run_test 
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+vim run_test
+ls
+ls
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+vim run_test
+ls
+vim compare_test
+diff ./tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log.txt
+cat log.txt
+file=$(cat ./tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt)
+echo ${file%*EOI}
+echo ${file*%EOI}
+echo ${file%EOI*}
+echo ${file%*EOI%}
+echo ${file#*EOI%}
+echo ${file##EOI%}
+echo ${file##EOI}
+echo ${file##*EOI}
+echo "echo ${file##*EOI}" >> compare_test
+vim compare_test 
+vim compare_test 
+diff echo ${file##*EOI} ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log
+echo ${file##*EOI} > tmp.txt
+diff tmp.txt ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log
+cat log
+vim ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log
+ls
+rm log
+rm log
+rm log.txt 
+vim ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt
+diff tmp.txt ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log
+cat log
+diff $(echo ${file##*EOI}) ./black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt > log
+ls
+mv compare_test gen_report
+rm log
+vim gen_report 
+ls
+sudo chmod +x gen_report 
+./gen_report 
+ls
+vim gen_report 
+vim gen_report 
+./gen_report 
+vim gen_report 
+./gen_report 
+vim gen_report 
+vim gen_report 
+./gen_report 
+ls
+rm result.txt
+rm tmp.txt
+ls
+vim gen_report 
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+vim gen_report 
+vim gen_report 
+./gen_report
+vim gen_report 
+vim gen_report 
+fg
+jobs
+fg
+fg
+fg
+./gen_report
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+cat run_test 
+vim gen_report 
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+vim gen_report 
+vim gen_report 
+./gen_report
+vim gen_report 
+cat ./run_test 
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+ls
+cd tmp
+ls
+cat *
+ls
+lal
+cat result.txt 
+vim gen_report 
+cd ..
+vim gen_report 
+./run_test 
+./run_test "/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/src/main/java"
+./gen_report 
+ls
+rm -r tmp
+ls
+vim gen_report 
+./gen_report
+cd tmp
+ls
+cat *
+ls
+cat givenValidServiceNumber_doesSellTicket.txt 
+vim gen_report 
+vim gen_report 
+cd ..
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+vim gen_report 
+vim gen_report 
+./gen_report
+vim ./gen_report 
+cat gen_report 
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+ls
+vim gen_report 
+ls
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+./gen_report
+vim gen_report 
+exit
+cd onedrive/year_3_2018-19/cisc327/a3/TestHarness/
+cd black_box_test_results/
+ls
+cd *cancel*
+ls
+ls |wc -l
+cd ..
+cd ..
+rm -r black_box_test_results/
+cd black_box_test_results/
+ls
+cd *cancel*
+ls
+vim givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim givenNegativeTicketNumber_doesNotCancelTicket.txt 
+ls
+echo 1 > test
+rm test
+ls
+cat *
+cd ..
+cd 2018-10-sellTicket/
+ls
+cat givenValidServiceNumber_doesSellTicket.txt 
+htop
+q
+exit
+cd onedrive/year_3_2018-19/cisc327/a3/TestHarness/
+ls
+cd tests
+ls
+cd cancelTicket/
+ls
+ls | wc -l
+cd ..
+ls
+cd cancelTicket/
+ls
+echo 1 > test
+rm test
+ls
+cat *
+cd ..
+cat */*
+cd sellTicket/
+cat givenValidServiceNumber_doesSellTicket.txt 
+exit
+man cat
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+file=$(cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt)
+echo "$file"
+echo "${file%*EOI}"
+echo "${file##*EOI}"
+echo "${file#*EOI}"
+echo "${file##*EOI}"
+echo "${file##*EOS}"
+echo "${file##*\n}"
+echo "${file##EOI}"
+echo "${file##*EOI}"
+file=$(cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt)
+echo "${file##*EOI}"
+file=$(cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt)
+echo "${file##*EOI}"
+echo "${file##* EOI}"
+echo "${file##*\ EOI}"
+echo "${file##*}"
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt
+echo "${file##*}" | sed '/ /d'
+echo "${file##*}"
+echo "${file##*EOI}"
+echo "${file##*EOI}" | sed '/ /d'
+echo "${file##*EOI}" | sed '/  /d'
+echo "${file##*EOI}" | sed '/\ /d'
+echo "${file##*EOI}" | sed '/^$/d'
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+file=cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+cat onedrive/year_3_2018-19/cisc327/a3/TestHarness/black_box_test_results/2018-10-cancelTicket/givenNoTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNoTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim --help
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+vim onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+cat -e onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/cancelTicket/givenNegativeTicketNumber_doesNotCancelTicket.txt 
+find "$1" -name "*.java" | awk {'print "\""$0"\""'} > sources.txt
+cd onedrive/year_3_2018-19/cisc327/a3/TestHarness/tests/sellTicket/
+ls
+la
+ls
+lal
+cd ..
+cd ..
+ls
+ls tests/logout/
+vim gen_report 
+cd tests/
+ls
+ls cancelTicket/
+ls cancelTicket/ | wc -l
+ls changeTicket/ | wc -l
+ls createService/ | wc -l
+ls deleteService/ | wc -l
+ls logout/ | wc -l
+ls login/ | wc -l
+ls sellTicket/ | wc -l
+exit
 sysupdate
-man pacman
-notify-send "Hi" "Hello"
-notify-send "Hi" "Hello" "Heeeelllo
-
-ls
-cd
-vim .config/i3/config `
-
-/
-vim .config/i3/config
-logout
-ppwd
-cppwd
-systemctl status notification
-systemctl --user status dunst
-systemctl --user list
-systemctl --user list-units
-systemctl --user list-units
-dunst
-logout
-systemctl --user list-units
-systemctl --user status dunst
-dunst
-man dunst
-notify-send "title"
-systemctl --user status dunst
-restart
-notify-send "title"
-systemctl --user status dunst
-restart
-vim .config/i3/config 
 exit
-conky -c ~/.config/conky/conf/cpu.conf 
-kill 11551
-exit
-cd downloads/
-ls
-rm proxy.duckduckgo.com 
-pacman -Syuo
-pacman -Syup
-man pacman -Q
-man yad
-cd
-cd .config/i3blocks/i3blocklets/network/
-ls
-xrandr --help
-xrandr
-refresh
 cd /usr/bin
 ls
-cd ..
-cd local/bin
+cat pacman
+62;c62;cls
 ls
-vim hdmi_toggle
-sudo vim hdmi_toggle
-./hdmi_toggle 
-./hdmi_toggle 
-./hdmi_toggle 
-xrandr
-xrandr --help
-sudo vim hdmi_toggle
-./hdmi_toggle 
+cd
+cd downloads/
+ls
+tar xpf pacman-5.1.1.tar.gz 
+ls
+vim pacman-5.1.1
+cd pacman-5.1.1
+ls
+cd src/
+ls
+cd pacman/
+ls
+cd ..
+ls
+cd ..
+cd ..
+ls
+rm -r *
+l
+ls
+cd ..
+ls
+cat hp-check.log 
 exit
-systemctl --user status dunst
-systemctl --user status dunst
-systemctl --user status dunst
-systemctl --user status dunst
-tlp
-tlp stat
-sudo tlp stat
-man yad
-cd .config/i3blocks/i3blocklets/network
-yad --notification
-yad --text-entry --filename=<(./network) --notification
-man yad
-yad --text-info --filename=<(./network) --notification
-yad --text-info --filename=<(./network)
-cd yad
-yad --text-info --filename=<(./network) --no-buttons
+cd onedrive/year_3_2018-19/cisc327/a2/GGGreatest-FrontEnd/
+git pull origin master
+exit
 ls
-yad --text-info --filename=<(./network_info) --no-buttons
-vim network_info 
-yad --text-info --filename=<(./network_info) --no-buttons
-yad --scale
-notify-send (yad --text-info --filename=<(./network_info) --no-buttons)
-notify-send (exec yad --text-info --filename=<(./network_info) --no-buttons)
-notify-send --help
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=20x30+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=20x30+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=200x100+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=200x100+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=600x100+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --geometry=600x100+50+10
-yad --text-info --filename=<(./network_info) --no-buttons --width=500
-yad --text-info --filename=<(./network_info) --no-buttons --width=200
-yad --text-info --filename=<(./network_info) --no-buttons --width=200
-yad --text-info --filename=<(./network_info) --no-buttons --width=200
-yad --text-info --filename=<(./network_info) --no-buttons --width=300
-yad --text-info --filename=<(./network_info) --no-buttons --width=250 --height=100
-yad --text-info --filename=<(./network_info) --no-buttons --width=250 --height=100
-yad --text-info --filename=<(./network_info) --no-buttons --width=250 --height=100 --margins=10
-man yad
-pacman -Sup
-pacman -Sup
-pkill -RTMIN+4 i3blocks
-pacman -Qu
-pacman -Qdt
-checkupdates
-checkupdates -h
-checkupdates | awk 'END { print (NR == 0 ? "System up to date" : NR " package" (NR > 1 ? "s" : "")); }'
-checkupdates | awk 'END { print (NR == 0 ? "System up to date" : NR " package" (NR > 1 ? "s" : "")); }'
-checkupdates
-printf checkupdates
+mkdir tmp/dot
+ls
+mkdir tmp tmp/dot tmp/dot/dot
+ls
+ls tmp/
+ls tmp/dot/
+rm -r tmp
+exit
+cd onedrive/Year\ 3\ \(2018-19\)/cisc327/a2/GGGreatest-FrontEnd/
+git pull
+ls -a
+cppwd
+cppwd
+ytmpv https://www.youtube.com/watch?v=wsIIJfSv6qY
+cppwd
+cppwd
+cppwd
+sysupdate
+sysupdate
+cppwd
+cppwd
+sysupdate
+cppwd
+cat > version-check.sh << "EOF"
+#!/bin/bash
+# Simple script to list version numbers of critical development tools
+export LC_ALL=C
+bash --version | head -n1 | cut -d" " -f2-4
+MYSH=$(readlink -f /bin/sh)
+echo "/bin/sh -> $MYSH"
+echo $MYSH | grep -q bash || echo "ERROR: /bin/sh does not point to bash"
+unset MYSH
 
-yad --text-info --filename=<(./network_info) --no-buttons --width=250 --height=100
-yad --text-info --filename=<(checkupdates) --no-buttons --width=250 --height=100
-yad --text-info --filename=<(checkupdates) --no-buttons --width=250 --height=100
-yad --text-info --filename=<(checkupdates) --no-buttons --width=250 --height=100 --margins=10
-yad --text-info --filename=<(checkupdates) --no-buttons --width=250 --height=100 --padding=10
-man yad
-yad --text-info --filename=<(checkupdates) --no-buttons --width=250 --height=100 --margins=10
-checkupdates | grep -v [0-9]
-checkupdates | grep -o "[a-z]*"
+echo -n "Binutils: "; ld --version | head -n1 | cut -d" " -f3-
+bison --version | head -n1
 
-checkupdates | grep -o "*[a-z]"
-checkupdates | grep -o "[a-z]*[a-z]"
-checkupdates | grep -o "[a-z]*[a-z]*"
-la
-vim update_line
-checkupdates | cut -d"->" -f3
-checkupdates | cut -d" " -f3
-checkupdates | cut -d" " -f2
-checkupdates | cut -d" " -f1 -f2
-checkupdates | cut -d" " -f1
-checkupdates | cut -d" " -f1
-yad --text-info --filename=<(checkupdates | cut -d" " -f1) --no-buttons --width=250 --height=100 --margins=10
-cd ..
+if [ -h /usr/bin/yacc ]; then
+  echo "/usr/bin/yacc -> `readlink -f /usr/bin/yacc`";
+elif [ -x /usr/bin/yacc ]; then
+  echo yacc is `/usr/bin/yacc --version | head -n1`
+else
+  echo "yacc not found" 
+fi
+
+bzip2 --version 2>&1 < /dev/null | head -n1 | cut -d" " -f1,6-
+echo -n "Coreutils: "; chown --version | head -n1 | cut -d")" -f2
+diff --version | head -n1
+find --version | head -n1
+gawk --version | head -n1
+
+if [ -h /usr/bin/awk ]; then
+  echo "/usr/bin/awk -> `readlink -f /usr/bin/awk`";
+elif [ -x /usr/bin/awk ]; then
+  echo awk is `/usr/bin/awk --version | head -n1`
+else 
+  echo "awk not found" 
+fi
+
+gcc --version | head -n1
+g++ --version | head -n1
+ldd --version | head -n1 | cut -d" " -f2-  # glibc version
+grep --version | head -n1
+gzip --version | head -n1
+cat /proc/version
+m4 --version | head -n1
+make --version | head -n1
+patch --version | head -n1
+echo Perl `perl -V:version`
+sed --version | head -n1
+tar --version | head -n1
+makeinfo --version | head -n1
+xz --version | head -n1
+
+echo 'int main(){}' > dummy.c && g++ -o dummy dummy.c
+if [ -x dummy ]
+  then echo "g++ compilation OK";
+  else echo "g++ compilation failed"; fi
+rm -f dummy.c dummy
+EOF
+
+bash version-check.sh
 ls
-cd ..
-ls
-vim yad_script
-echo yad --text-info --filename=<(checkupdates | cut -d" " -f1) --no-buttons --width=250 --height=100 --margins=10
-echo yad --text-info --filename=<(checkupdates | cut -d" " -f1) --no-buttons --width=250 --height=100 --margins=10 >> yad_script
-la
-sudo chmod +x yad_script 
-./yad_script
-vim yad_script
-./yad_script
-la
-mkdir yad
-la
-mv yad_script yad
-la
-cd network/
-mv yad/ ../
-mv yad/ ../yad/network
-cd ..
-cd yad
-vim yad_script 
-./yad_script 
-./yad_script 
-vim yad_script 
-refresh
-vim yad_script 
-./yad_script 
-vim yad_script 
-./yad_script 
-vim yad_script 
-vim yad_script update
-./yad_script update
-vim yad_script
-./yad_script update
-la
-vim current_pid
-vim yad_state
-la
-mv current_pid yad_pid
-vim yad_script 
-./yad_script update
-cat yad_pid 
-vim yad_script 
-ka
-la
-cat yad_state 
-vim yad_script 
-cat yad_state 
-vim yad_script 
-./yad_script update
-vim yad_script 
-vim yad_script 
+rm -r version-check.sh 
+lfdish
+lfdisk
+sudo fdisk /dev/sda
+lfdisk
 restart
-cppwd
-cppwd
-cppwd
-cppwd
-cd documents/christian/
-cd
-cppwd
-cd onedrive/Year\ 3\ \(2018-19\)/hist263/
-ls
-mv red_team.pdf blue_team.odf
-mv  blue_team.odf blue_team.pdf
-ls
-mv red_team.odg blue_team.odg
-mv blue_team.pdf red_team.pdf
-mv blue_team.odg red_team.odg
-okular blue_team.pdf
-okular blue_team.pdf
-cppwd
-cppwd
-sysupdate
-cppwd
-sysupdate
-vim .config/i3/config
-refresh
-vim .config/i3/config
-cd .config/i3blocks/i3blocklets/yad
-./yad_script 
-./yad_script 
-./yad_script 
-./yad_script 
-./yad_script 
-./yad_script 
-./yad_script update
-./yad_script update
-./yad_script update
-sysupdate
-cower -u
-cower -u | cut -d " " -f 1
-cower -u | cut -d " " -f 2
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-./yad_script update
-sysupdate
-./yad_script update
-la
-cd network
-la
-cat network_info
-la
-./network_info
-cd ..
-ls
-./yad_script network
-./yad_script network
-xrandr
-edtalias
-refresh
-cd
-cd onedrive/Year\ 3\ \(2018-19\)/cisc322/
-vim peer_review
-pkill -HUP `pidof yad`
-xev
-xprop
-pkill -HUP `pidof Yad`
-pkill -HUP `pidof YAD`
-pkill -HUP pidof YAD
-killall yad
-killall Yad
-killall YAD
-kill 18696
-killall yad
-killall YAD
-killall Yad
-sysupdate
-la
-cd
-cd documents/build/
-ls
-sysupdate
-cd
-vim bin
-cd bin
-ls
-vim aur_install 
-cd
-cd documents/build/
-cd shadowfox-updater/
-ls
-cd ..
-cd
-vim bin/aur_install 
-sysupdate
-sysupdate
-cd .config/i3blocks
-vim config 
-cd i3blocklets/mediaplayer/
-ls
-vim media
-vim mediaplayer 
-cd ..
-cd system/
-vim system 
-cd ..
-ls
-cd mediaplayer/
-ls
-./scroll mediaplayer
-vim mediaplayer 
-./scroll mediaplayer
-./scroll mediaplayer
-./scroll mediaplayer
-./scroll mediaplayer
-./scroll mediaplayer
-./scroll mediaplayer
-cd ..
-cd ..
-vim config
-vim config
-cd i3blocklets
-ls
-cd mediaplayer/
-ls
-./scroll 
-./scroll mediaplayer
-./scroll mediaplayer
-vim scroll 
-./scroll mediaplayer
-vim scroll 
-cd shadowfox-updater/
-yad
-sudo netctl-auto switch-to someone-is-coming-5G
-cd /etc/netctl
-ls
-sudo netctl-auto switch-to someone-is-coming-5G
-cat someone-is-coming
-sudo cat someone-is-coming
-sudo wifi-menu
-sudo wifi-menu
-ipconfig
-ifconfig
-iw dev
-ifup
-netctl

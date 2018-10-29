@@ -172,6 +172,7 @@ bindsym mod1+g exec steam
 bindsym mod1+c exec slack
 
 bindsym mod1+w exec ~/bin/change_background
+
 ##############################Lock Screen Keybind#########################################
 bindsym $mod+mod1+l exec i3lock -B=10 --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
 
@@ -191,8 +192,8 @@ bindsym XF86AudioMute exec amixer set Master toggle; exec pkill -RTMIN+1 i3block
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%; exec pkill -RTMIN+10 i3blocks
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle; exec pkill -RTMIN+10 i3blocks
 
-bindsym Pause exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-
+#bindsym Pause exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym Pause exec playerctl play-pause
 ##############################Brightness and Backlight Keybinds###########################
 bindsym XF86MonBrightnessUp exec xbacklight + 5; exec pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessDown exec xbacklight - 5; exec pkill -RTMIN+2 i3blocks
@@ -231,6 +232,11 @@ for_window [instance="(?i)dropdown"] move scratchpad
 for_window [instance="(?i)dropdown"] resize set 800 300
 
 for_window [class="(?i)yad"] floating enable
+for_window [instance="(?i)pip"] floating enable;
+for_window [instance="(?i)pip"] resize set 500 250;
+for_window [instance="(?i)pip"] sticky enable;
+for_window [instance="(?i)pip"] move position 1402 43;
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
