@@ -1,9 +1,3 @@
-wc -l 
-wc -l modules 
-ls
-vim find_modules 
-./find_modules 
-cat modules 
 vim find_modules 
 ./find_modules 
 cat modules 
@@ -497,4 +491,10 @@ cd ~/downloads/STG-backups/..
 exit
 dotinstall
 vim .bashrc
+exit
+ls .config/onedrive/
+exit
+cd .config/i3
+ls
+vim config 
 exit

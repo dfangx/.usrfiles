@@ -171,7 +171,7 @@ bindsym mod1+g exec steam
 
 bindsym mod1+c exec slack
 
-bindsym mod1+w exec ~/bin/change_background
+bindsym mod1+w exec ~/bin/chgbackground
 
 ##############################Lock Screen Keybind#########################################
 bindsym $mod+mod1+l exec i3lock -B=10 --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
@@ -194,6 +194,8 @@ bindsym XF86AudioMute exec amixer set Master toggle; exec pkill -RTMIN+1 i3block
 
 #bindsym Pause exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym Pause exec playerctl play-pause
+bindsym $mod+mod1+Right exec playerctl next
+bindsym $mod+mod1+Left exec playerctl previous
 ##############################Brightness and Backlight Keybinds###########################
 bindsym XF86MonBrightnessUp exec xbacklight + 5; exec pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessDown exec xbacklight - 5; exec pkill -RTMIN+2 i3blocks
@@ -212,7 +214,7 @@ bindsym $mod+shift+a sticky toggle
 
 ##############################Startup Scripts#############################################
 exec /usr/local/bin/hdmi_toggle
-exec --no-startup-id ~/bin/change_background 
+exec --no-startup-id ~/bin/chgbackground 
 
 #############################Startup Apps#################################################
 exec $term 
