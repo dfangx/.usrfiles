@@ -18,4 +18,4 @@ config/skypeforlinux
 config/htop
 config/onedrive/*
 !/config/onedrive/config
-bash_history
+.bash_history
