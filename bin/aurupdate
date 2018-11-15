@@ -1,0 +1,27 @@
+#!/bin/bash
+
+dir=~/downloads/build
+
+echo Checking for build directory...
+if [ ! -d $dir ]; then
+	echo No build directory found. Creating build directory "$dir"...
+	mkdir -v $dir 
+else
+	echo Build directory exists.
+fi
+
+echo Fetching updates...
+cower -fdu --target $dir
+
+if [ $(ls $dir | wc -l) -gt 0 ]; then
+	for f in $dir/*; do
+		echo Creating package "$f"
+		cd $f
+		makepkg -si
+	done
+else
+	echo "No AUR packages"
+fi
+
+echo Cleaning up...
+rm -rv $dir

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+dir=~/downloads/build
+url=$1
+
+if [ -z $url ]; then
+	echo No URL arguments detected.
+	exit 1
+fi
+
+echo Checking for build directory...
+if [ ! -d $dir ]; then
+	echo No build directory found. Creating build directory "$dir"...
+	mkdir -v $dir 
+else
+	echo Build directory exists.
+fi
+
+echo Cloning "$url"
+git clone "$url"
+
+cd $dir/*
+makepkg -si
+
+echo Cleaning up...
+rm -rv $dir
