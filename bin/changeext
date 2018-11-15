@@ -1,11 +1,20 @@
 #!/bin/bash
 
 ext=$1
-dir=$2
-cd $dir
-for f in *
-do
+if [ -z $ext ]; then
+	echo Extension argument must be specified
+	exit 1
+fi
 
-	mv $f ${f}.$ext
+dir=$2
+if [ -z $dir ]; then
+	echo Target directory is not specified
+	exit 1
+fi
+
+echo Changing extension of files in $dir ...
+for f in $dir/*
+do
+	mv -v $f ${f}.$ext
 done
 

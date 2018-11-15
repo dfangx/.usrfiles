@@ -16,3 +16,6 @@ config/okularrc
 config/pulse
 config/skypeforlinux
 config/htop
+config/onedrive/*
+!/config/onedrive/config
+bash_history

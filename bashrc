@@ -19,5 +19,3 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 eval "$(dircolors -b ~/.dircolors)"
-neofetch
-

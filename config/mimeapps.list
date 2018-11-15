@@ -23,6 +23,6 @@ application/x-extension-shtml=userapp-Firefox-TEBHLZ.desktop;userapp-Firefox-11X
 application/xhtml+xml=userapp-Firefox-TEBHLZ.desktop;userapp-Firefox-11X8QZ.desktop;
 application/x-extension-xhtml=userapp-Firefox-TEBHLZ.desktop;userapp-Firefox-11X8QZ.desktop;
 application/x-extension-xht=userapp-Firefox-TEBHLZ.desktop;userapp-Firefox-11X8QZ.desktop;
-application/pdf=okularApplication_pdf.desktop;libreoffice-draw.desktop;firefox-beta-bin.desktop;
+application/pdf=okularApplication_pdf.desktop;firefox-beta-bin.desktop;libreoffice-draw.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-draw.desktop;
 text/plain=libreoffice-writer.desktop;
