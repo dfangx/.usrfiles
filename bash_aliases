@@ -3,8 +3,9 @@ alias la="ls -a"
 alias lal="ls -al"
 alias ll="ls -l"
 alias rm="rm -vI"
-alias mkdir="mkdir -v"
 alias mv="mv -v"
+alias rmdir="rmdir -v"
+alias mkdir="mkdir -v"
 
 #Shell Maintenance
 alias refresh="clear && source ~/.bashrc"

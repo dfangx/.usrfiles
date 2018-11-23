@@ -1,11 +1,11 @@
 #!/bin/bash
 
-dir=~/.dotfiles
-dir_old=~/dotfiles_old
+dir=~/.usrfiles
+dir_old=~/usrfiles_old
 files=$(ls $dir)
 exclude=README.md
 echo "Creating backup in ~/dotfiles_old"
-mkdir -p $dir_old
+mkdir -pv $dir_old
 echo "done"
 
 for file in $files
@@ -27,14 +27,14 @@ do
 		if [[ $file == bin ]]
 		then
 			echo "Moving $file to $dir_old"
-			mv ~/$file $dir_old/
+			mv -v ~/$file $dir_old/
 			echo "Creating symlink to $file in $HOME"
-			ln -s $dir/$file ~/$file
+			ln -sv $dir/$file ~/$file
 		else
 			echo "Moving $file to $dir_old"
-			mv ~/.$file $dir_old/
+			mv -v ~/.$file $dir_old/
 			echo "Creating symlink to $file in $HOME"
-			ln -s $dir/$file ~/.$file
+			ln -sv $dir/$file ~/.$file
 		fi	
 	fi
 	flag=0
