@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/arch/cyrusng/documents/java/Black Box Test Results'
-let g:netrw_dirhist_2='/home/arch/cyrusng/onedrive/Year 3 (2018-19)/cisc327/a3/TestHarness'
-let g:netrw_dirhist_3='/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a3/TestHarness/diff_file'
-let g:netrw_dirhist_4='/home/arch/cyrusng/downloads/pacman-5.1.1'
-let g:netrw_dirhist_5='/mnt/usb1/boot/grub'
-let g:netrw_dirhist_6='/home/arch/cyrusng/bin'
-let g:netrw_dirhist_7='/home/arch/cyrusng/.dotfiles'
-let g:netrw_dirhist_8='/home/arch/cyrusng/dotfiles_old'
+let g:netrw_dirhist_cnt =0

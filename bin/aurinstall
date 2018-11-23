@@ -16,11 +16,12 @@ else
 	echo Build directory exists.
 fi
 
+cd $dir
 echo Cloning "$url"
-git clone "$url"
+git clone "$url" -v
 
 cd $dir/*
 makepkg -si
 
 echo Cleaning up...
-rm -rv $dir
+sudo rm -rv $dir

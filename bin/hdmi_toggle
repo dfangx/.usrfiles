@@ -1,0 +1,41 @@
+#!/bin/bash
+exec >> ~/documents/logs/sound
+exec 2>&1
+
+export DISPLAY=:0
+export XAUTHORITY="/home/arch/cyrusng/.Xauthority"
+
+echo "[$(date)] ===================================="
+
+USER_NAME="$(whoami)"
+if [[ "$USER_NAME" == "" ]]
+then
+	USER_NAME="cyrusng"
+fi
+echo "$USER_NAME"
+
+USER_ID=$(id -u "$USER_NAME")
+echo "$USER_ID"
+
+
+PULSE_SERVER="unix:/run/user/$USER_ID/pulse/native"
+echo "$PULSE_SERVER"
+
+AUDIO_OUTPUT="analog-stereo"
+HDMI_STATUS="$(xrandr -q | grep -w "connected" | grep -c "HDMI2")"
+
+if [[ $HDMI_STATUS > 0  ]]
+then
+	AUDIO_OUTPUT="hdmi-stereo-extra1"
+fi
+
+xrandr --auto
+xrandr --output HDMI2 --mode 1920x1080
+echo "HDMI is" $HDMI_STATUS
+
+sudo -u "$USER_NAME" pactl --server "$PULSE_SERVER" set-card-profile 0 output:$AUDIO_OUTPUT+input:analog-stereo
+echo "Pulse audio connected to:" $AUDIO_OUTPUT
+
+#export PULSE_RUNTIME_PATH="/run/user/1000/pulse/"
+#USER_NAME="$(who | awk -v vt=tty$(fgconsole) '$0 ~ vt {print $1}')"
+#pacmd set-card-profile 0 "output:$AUDIO_OUTPUT+input:analog-stereo"

@@ -1,500 +1,500 @@
-vim find_modules 
-./find_modules 
-cat modules 
-vim find_modules 
-./find_modules 
-cat modules 
-vim find_modules 
-./find_modules 
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
+sudo wifi-menu 
 ls
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules 
+sudo rm Chicken\ Pot\ PiFi 
+sudo netctl-auto switch-to "Chicken Pot PiFi"
+sudo netctl-auto switch-to "Chicken Pot PiFi bridge"
+sudo netctl-auto switch-to "Chicken Pot PiFi-bridge"
+sudo netctl-auto switch-to "Chicken Pot PiFi bridge"
+netctl-auto list
+sudo netctl-auto list
+systemctl restart netctl-auto@wlp2s0
+sudo netctl-auto list
+sudo netctl-auto switch-to "Chicken Pot PiFi bridge"
+netctl-auto
+cd /etc/netctl/
 ls
-cat modules 
-vim find_modules 
-./find_modules 
-vim find_modules 
-./find_modules 
-cat modules 
+sudo netctl-auto switch-to "wlp2s0-Chicken Pot PiFi bridge"
 ls
-cat modules | wc -l
-vim find_modules 
-./find_modules 
-cat modules | wc -l
-vim find_modules 
-cat modules 
-vim find_modules 
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-ls
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-ls
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-cat config 
-;s
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-vim find_modules 
-./find_modules ~/downloads/linux-4.19.1/
-cat kernel_config 
-cat kernel_config | wc -l
-vim find_modules 
-lspci | grep IDE
-lspci | grep SATA
-cat modules 
-cppwd
-cppwd
-cppwd
-cppwd
-sysupdate
-cppwd
-cppwd
-mkdir onedrive/year_3_2018-19/cisc327/a4
-cd onedrive/year_3_2018-19/cisc327/a4
-ls
-git clone https://github.com/zfreeds/GGGreatest-Backend.git
-git clone git@github.com:zfreeds/GGGreatest-Backend.git
-cd GGGreatest-Backend/
-ls
-cppwd
-sysupdate
-cppwd
-cppwd
-cppwd
-htop
-git pull origin master
-git checkout -b cyrus_service-capacity-check
-git status
-git checkout -b cyrus_validator-checks
-git branch -D cyrus_service-capacity-check
-git branch
-git status
-git add .
-git commit -m "Added some validator functionality and ServiceObject properties"
-git push
-git push --set-upstream origin cyrus_validator-checks
-git push
-git status
-git commit -am "Added check for junk input"
-git push
-git status
-sysuptead
-sysupdate
-git add .
-git commit -am "function name change and added param for service name function"
-git push
-git commit -am "changed exit code"
-git push
-cppwd
-git branch
-git checkout master
-git branch -D cyrus_validator-checks
-git pull origin master
-ls
-cppwd
-git pull origin master
-ls /sys/class/net/
-ifconfig -a
-sysupdate
-git checkout -b cyrus_validator
-git status
-git add .
-git commit -m "Completed validator class"
-git push
- git push --set-upstream origin cyrus_validator
-cppwd
-git pull origin master
-ls
-ld
-ls
-git pull origin master
-git status
-git checkout -b cyrus_handle-tsf
-git status
-git commit -am "Created read tsf and handler tsf"
-git push
-git push --set-upstream origin cyrus_handle-tsf
-git commit -am "Minor comment change"
-git push
-git checkout master
-git pull origin master
-git branch
-git branch -D cyrus_handle-tsf
-git branch -D cyrus_validator
-cppwd
-sysupdate
-pwd
-cppwd
-git pull origin master
-cppwd
-git status
-git commit -am "Fixed ticket heck validation"
-git status
-git stash
-git checkout -b cyrus_fix-ticket-validation
-git status
-git push
-git push --set-upstream origin cyrus_fix-ticket-validation
-git status
-git checkout master
-git status
-git stash
-git pull origin master
-git pull origin master
-git pull
-git pull origin master
-git status
-git checkout -b cyrus_fix-io-errors
-git status
-git commit -am "added try-catch for writing file IO"
-git push
-git push --set-upstream origin cyrus_fix-io-errors
-git pull origin master
-git checkout master
-git pull
-git pull origin master
-git pull origin master
-git checkout -b cyrus_cleanup
-git commit -am "added comments"
-git push
-git push --set-upstream origin cyrus_cleanup
-git commit -am "cleanup part 2"
-git push
-git pull origin master
-cd src/main/java/
-ls
-cp -r * ~/downloads/
-cp -r * ~/downloads/
-ls
-ls | wc -l
-cppwd
-git status
-git pull
-git pull origin master
-git push
-sysupdate
-cppwd
-cppwd
-cppwd
-sysupdate
-make menuconfig
-cd downloads/linux-4.19.1
-make menuconfig
 cd
-cat modules 
-time
-date
-man gets
-finger
-fingerd
-zip
+netctl-auto list
+sudo netctl-auto list
+sysclean
+shadowfox-updater 
+cd .mozilla/
+ls
+cd firefox/b8va3cyt.default-1538591594520/
+cd chrome/
+ls
+cat userChrome.css
+vim userChrome.css
+ls
+cd
+cd
+tex '\empty Hell World!\bye'
+ls
+tex '\empty Hell World!\bye'
+ls
+cat texput.dvi 
+pdftex '\empty Hello world!\bye'
+ls
+cat texput.pdf 
+okular texput.pdf 
+ls
+rm -r texput.*
+tlmgr option
+tlmgr
+systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl restart netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl status netctl-auto@wlp2s0
+cat all.java 
+vim all.java 
+cat all.java 
+neofetch
+ls
+ls onedrive/year_3_2018-19/cisc327/a5/
+vim all.java 
+ls
+rm -r questions 
+cd documents/christian/
+cat the_image_of_god.odt 
+ls
+vim the_image_of_god.tex
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+okular the_image_of_god.pdf 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+vim the_image_of_god.tex
+xelatex the_image_of_god.tex 
+cd
 cd downloads/
 ls
-zip -b ./A4.zip Report.pdf *.java
+rm -r Data/ Index/ Metadata/
+ls
+rm -r preview*.jpg
+ls
+rm Sicily\ Part\ 1.zip 
 ls
 ls
-zip A4.zip Report.pdf Runner.java ServiceObject.java Validator.java viewModel.java 
+unzip CISC322_Understand_Chromium_StrictParse.zip 
 ls
-mv A4.zip ~
+cd minimum_chromium/
+ls
+cd chrom
+cd chrome/
+ls
+cd browser/
+ls
+cd ui
+ls
+vim browser_navigator.h
+ls omnibox/
+ls view
+ls views
+ls
+ls toolbar/
+ls webui/
+ls views
+ls views/toolbar/
+ls views/omnibox/
+ls views/toolbar/
+vim views/toolbar/
+vim views/toolbar/reload_button.h
+vim views/toolbar/reload_button.cc
+vim views/toolbar/reload_button.h
+vim views/toolbar/reload_button.cc
+vim views/toolbar/toolbar_button.h
+vim views/toolbar/toolbar_action_view.h
+vim views/toolbar/toolbar_action_view_delegate_views.h
+vim views/toolbar/toolbar_action_view.h
+vim views/toolbar/toolbar_action_view_delegate_views.h
+vim views/toolbar/toolbar_view.h
+ls views
+ls views/frame/
+ls views
+ls views/location_bar/
+ls
+ls toolbar/
+find reload
+find "reload"
+find -name "reload"
+find -name "reload*"
+find -name "*reload*"
+vim cocoa/toolbar/reload_button_cocoa.h
+vim cocoa/toolbar/reload_button_cocoa.cc
+rm cocoa/toolbar/reload_button_cocoa.cc
+vim cocoa/toolbar/reload_button_cocoa.cc
+vim cocoa/toolbar/reload_button_cocoa.mm
+vim views/
+vim views/toolbar/reload_button.cc
+vim views/toolbar/reload_button.cc
+cd base
+vim views/toolbar/reload_button.cc
+vim views/toolbar/reload_button.h
+vim views/toolbar/reload_button.cc
+exit
+sysclean
+exit
+compton -b
+exit
+exit
+cd /etc/udev/rules.d/
+ls
+cat *
+cat 95-monitors.rules 
+ls
 cd
-unzip A4.zip
 ls
-rm -r *.java *.pdf
-rm A4.zip 
+cd dotfiles_old/
+cd
+cd .dotfiles/
 ls
+cd
+cd bin
+ls
+cd
+exit
+cppwd
+sysupdate
+cppwd
+vim tasks
+vim tasks
+sysudpate
+sysupdate
+cppwd
+latex
+vim questions
+cat questions
+pkginstall texlive-most
+pkgremove texlive-most
+pkginstall texlive-most
+aurinstall https://aur.archlinux.org/texlive-localmanager-git.git 
+aurinstall https://aur.archlinux.org/perl-term-shellui.git 
+aurinstall https://aur.archlinux.org/texlive-localmanager-git.git 
+sysclean
+pkgremove perl-term-shellui
+tllocalmgr
+tllocalmgr latex
+tllocalmgr options
+tllocalmgr option
+tllocalmgr install latex latex-bin latexconfig latex-fonts
+pkgremove tllocalmgr
+pkgremove perl-term-shellui
+sysclean
+cppwd
+cppws
+cppwd
+cppwd
+sysupdate
+ls
+cd bin
+ls
+cd
+ls downloads/
+cd onedrive/year_3_2018-19/cisc327/a4/GGGreatest-Backend/
+git pull origin master
+cppwd
+ls
+vim csf
+vim vsf
+git stash
+git pull origin master
+ls
+vim tsf
+git pull origin master
+git pull origin master
+ls
+cat mergedTSF.txt 
+cat newValidServices.txt 
+ls
+cat csf
+cat tsf
+git status
+ls
+vim tsf 
+vim tsf 
+ls
+ls -a
+ls
+cat newValidServices.txt 
+cat mergedTSF.txt 
+vim tsf 
+vim tsf 
+vim tsf 
+ls
+cat newvsf.txt 
+cat newcsf.txt 
+vim tsf 
+cat newcsf.txt 
+cat newvsf.txt 
+vim tsf 
+cat csf
+ls
+rm -r newvsf.txt newcsf.txt 
+ls
+cat newcsf.txt 
+vim tsf 
+cat newcsf.txt 
+vim tsf 
+vim tsf 
+vim tsf 
+cat tsf >> mergedTSF.txt 
+cat mergedTSF.txt 
+cat newcsf.txt 
+cat newcsf.txt 
+cat newcsf.txt 
+cppwd
+cat newvsf.txt 
+cat csf 
+cat newcsf.txt 
+ls
+ls
+rm csf newvsf.txt tsf newcsf.txt 
+ls
+rm csf newvsf.txt tsf newcsf.txt 
+ls
+git status
+ls
+git checkout -b cyrus_bug-fix
+git commit -am "Fixed bugs for cancel ticket and delete service"
+ls
+git status
+git push
+git push --set-upstream origin cyrus_bug-fix
+sysupdate
+pkgremove slack
+pkgremove slack-bin
+pkgremove slack-git
+pkgremove slack-desktop
+sysclean
+git status
+vim tsf
+vim csf
+vim csf
+ls
+cat mergedTSF.txt 
+cat newValidServices.txt 
+vim csf
+ls
+cat newvsf.txt 
+kill compton
+killall compton compton
+compton
+compton &
+cppwd
+sysupdate
+vim .config/i3/config
+cd
+vim .config/i3/config
+killall compton
+cppwd
+cppwd
+cppwd
+df
+pkgremove virtualbox
+df
+cd documents/christian/
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+xelatex the_image_of_god.tex
+cppwd
+sysupdate
+cd /usr/bin
+ls
+cd ..
+cd local
+cd bin
+ls
+ll
+cd
+ls
+rm -r VirtualBox\ VMs/
 cd downloads/
 ls
+rm CISC322_Understand_Chromium_StrictParse.zip 
+ll
+cd
+df -h
+paccache --help
+paccache -r
+paccache -s
+paccache -d
+pacman -Qdt
+find -xtype l -print
+cd .config/pulse/
 ls
-okular Report.pdf 
-ls
-unzip A4.zip 
-cat Runner.java 
-ls
-cat Validator.java 
-ls
-cat viewModel.java 
-ls
-cat ServiceObject.java 
-ls
-okular Report.pdf 
-ls
-rm *.pdf *.java
-ls
-cd linux-4.19.1
-make config
 cd
 ls
-./find_modules 
-cd downloads/linux-4.19.1
-make config
-ls /proc/config.gz 
-cp /proc/config.gz .
-gzip -dv config.gz 
-vim config 
-findmnt
-findfs
-man findfs
-findfs ext4
+du
+df
+df -h
+du -h
+df --help
+du --help
+du -S
+du --help
+du /
+du / -h
+du / -hS
+du --help
+du -s
+du -sh
+du -sh /
+sudo du -sh /
 ls
-make menuconfig
-user nobody
-who 
-who nobody
-who root
-whois root
-whoami
-whoami root
-which
-which curl
-which linux
-lsmod
-lsmod | wc -l
-localmodconfig
-make localmodconfig
-lsmod
-make olddefconfig
-make localmodconfig
-lsmod
-make menuconfig
-chmod --help
-cd
-cd /mnt
+cd bin
+ls
+cat aurinstall 
+head aurinstall 
+head -n aurinstall 
+head --help
+head -n 1 aurinstall
+head -n -1 aurinstall
+cat aurinstall 
+cppwd
+mount /dev/sdb3 /mnt/usb1
 sudo mount /dev/sdb3 /mnt/usb1
-cd /mnt/usb1/
-rm *.odt *.pdf
-sudo rm *.odt *.pdf
-sudo boot/
-cd boot/iso/
+fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+sudo mount /dev/sdb3 /mnt/usb1
+cd /mnt/usb1
 ls
-rm ~/downloads/install-amd64-minimal-20181101T214502Z.iso 
+cd boot/
 ls
-cp ~/downloads/install-amd64-minimal-20181111T214502Z.iso .
-sudo cp ~/downloads/install-amd64-minimal-20181111T214502Z.iso .
+cd iso
 ls
 cd ..
 ls
 cd grub/
 ls
-vim grub.cfg
-sudo vim grub.cfg
-xs
+cp grub.cfg ~/
 cd
-cd downloads/
 ls
-sudo mount install-amd64-minimal-20181111T214502Z.iso /mnt/usb2
-cd /mnt/usb2
-l
-ls
-cd isolinux/
-ls
-cd ..
-ls
-cd boot/
-ls
-ls -a
-cd ..
-ls isolinux/
-ls
-cd isolinux/
-ls
-cat gentoo
-ls
-cd
-sudo umount /mnt/*
-restart
-sudo mount ~/downloads/install-amd64-minimal-20181111T214502Z.iso /mnt/usb2
-cd /mnt/usb2
-ls
-cd isolinux/
-ls
-cat isolinux.cfg 
-exit
-sudo /mnt/usb1 /dev/sdb3
-sudo mount /mnt/usb1 /dev/sdb3
-fdisk -l
-sudo mount /dev/sdb3 /mnt/usb1
-cd /mnt/usb1/boot/grub/
-vim grub.cfg 
-sudo vim grub.cfg 
-cd
-sudo umount /mnt/usb*
-restart
-sudo mount /dev/sdb3 /mnt/usb1
-vim /mnt/usb1/boot/grub/
-sudo vim /mnt/usb1/boot/grub/grub.cfg 
+cat grub.cfg 
 sudo umount /mnt/usb1
 restart
-cppwd
-sudo umount /mnt/*
 ls
-m5sums
-m5dsums
-m5dsum
-mdsum
+mv grub.cfg documents/
+ls
+sudo mount /dev/sdb1 /mnt/usb1
+cd usr/share/bin
+cd usr/local/bin
+cd /usr/local/bin
+ls
+mv hdmi_toggle ~/bin
+sudo mv hdmi_toggle ~/bin
+ls
+sudo mv ~/bin/hdmi_toggle bin
+ls
+mv bin hdmi_toggle
+sudo mv bin hdmi_toggle
+ls
+cat hdmi_toggle 
+cat hdmi_toggle > ~/bin/hdmi_toggle
+sudo umount /mnt/usb1
+df
+cd /etc/udev/rules.d/
+ls
+sudo vim 95-monitors.rules 
+systemctl status netctl-auto@wlp2s0
+systemctl start netctl-auto@wlp2s0
 cd bin
 ls
-cd aur_install 
-vim aur_install 
-refresh
-lsmod | wc -l
-restart
-cd downloads/
-ls
-rm A4.zip 
-rm Win10_1803_English_x64.iso 
-ls
-df
-df -h
-ls
-cd ..
-ls
-cd VirtualBox\ VMs/
-ls
-cd
-ls
-cd downloads/
 ll
-rm -r linux-4.19.1 linux-4.19.1.tar.xz 
+cat hdmi_toggle
+./hdmi_toggle 
+sudo ./hdmi_toggle 
+sudo ./hdmi_toggle 
+./hdmi_toggle 
 ls
-df -h
+ll
+chown hdmi_toggle cyrusng
+udo chown cyrusng hdmi_toggle 
+sudo chown cyrusng hdmi_toggle 
 ls
-cd
+ll
+./hdmi_toggle 
+sudo chown root hdmi_toggle 
+ll
+sudo chmod +x hdmi_toggle 
+ll
+./hdmi_toggle 
+vim hdmi_toggle 
+./aurinstall 
+./hdmi_toggle 
+./aurinstall 
+vim hdmi_toggle 
+sudo ./hdmi_toggle 
+cd /etc/systemd/system
 ls
-rm -r 1_accuweather/
-ls
-cat config 
-rm config kernel_config modules 
-rm find_modules 
-ls
-df -h
+vim hdmi_toggle.service 
+sudo vim hdmi_toggle.service 
+sudo systemctl status netctl-auto@wlp2s0
+journalctl -xe
 restart
-vim bin/aur_install 
 cd bin
+./hdmi_toggle 
+sudo systemctl status hdmi_toggle
+sudo systemctl status hdmi_toggle
+pwd
+sudo systemctl status hdmi_toggle
+sudo systemctl status hdmi_toggle
+sudo systemctl status hdmi_toggle
+./hdmi_toggle 
+./hdmi_toggle 
+./hdmi_toggle 
+sudo systemctl status hdmi_toggle
+sudo systemctl restart hdmi_toggle
+systemctl daemon-reload
+vim hdmi_toggle 
+ls
+ls
+ll
+sudo chmod +x kb-light.py 
+ls
+mv kb-light.py kb_light.py 
+vim kb_light.py 
 cd
-aur_install
-ls
-vim bin/aur_install 
-aur_install
-ls
-ls downloads/
-onedrive
-onedrive
-onedrive -v
-ls
-cd .dotfiles/
-ls
-cd
-vim bin
-vim bin
-vim .bashrc
-cd bin
-ls
-mv aur_install aurupdate
-cd
-aurupdate
-cd bin
-ls
-vim aurupdate 
-vim aurinstall
-aurinstall
-sudo chmod +x aurinstall
-aurinstall
-vim aurinstall
-aurinstall
-ls ~/downloads/
-vim aurinstall
-aurinstall
-vim aurinstall
-sysclean
-edtalias
-refresh
-sysupdate
-vim aurinstall 
-vim aurupdate 
-rm --help
-l
-ls
-vim change_background 
-changeext 
-vim changeext 
-vim dotinstall 
-vim install 
-cd
-dotinstall
-dotinstall
-vim .bashrc
-echo $PATH
-vim .bashrc
-refresh
-echo $PATH
-ls
-ls -a
-mv bin. bin
-mv documents./ documents
-mv dotfiles_old./ dotfiles_old
-mv onedrive. onedrive
-mv pictures./ pictures
-mv downloads./ downloads
-ls
-mv desktop./ desktop
-dotinstall
-refresh
-echo $PATH
-exit
-df
-df -h
-sysupdate
-ls
-ls dotfiles_old/
-rm -r dotfiles_old/bin
-ls
-ls dotfiles_old/
-ls -a
-la dotfiles_old/
-edtalias
-cat bin/aurupdate
-makepkg -h
-makepkg -b
-makepkg -v
-ls ~/downloads
-cd ~/downloads/STG-backups/..
-exit
-dotinstall
-vim .bashrc
-exit
-ls .config/onedrive/
-exit
-cd .config/i3
-ls
-vim config 
+bim .config/i3/config
+vim .config/i3/config
 exit

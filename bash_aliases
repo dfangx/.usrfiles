@@ -2,7 +2,10 @@ alias ls="ls --color=auto"
 alias la="ls -a"
 alias lal="ls -al"
 alias ll="ls -l"
-alias rm="rm -I"
+alias rm="rm -vI"
+alias mkdir="mkdir -v"
+alias mv="mv -v"
+
 #Shell Maintenance
 alias refresh="clear && source ~/.bashrc"
 alias edtalias="vim ~/.bash_aliases"
@@ -27,7 +30,7 @@ alias mvspacer="i3-msg move workspace to output right --mode 1920x1080"
 
 #System maintenance
 alias powreport="sudo powertop --html && firefox-beta ~/powertop.html"
-alias sysbackup="sudo tar cvpzf arch-linux-backup-$(exec date +%F).tgz ~/ /etc/sudoers.d /etc/X11/xorg.conf.d/40-libinput.conf /etc/grub.d/40_custom /usr/local/bin /etc/udev/rules.d /etc/systemd/system /etc/netctl"
+alias sysbackup="sudo tar cvpzf arch-linux-backup-$(exec date +%F).tgz ~/ /etc/sudoers.d /etc/X11/xorg.conf.d/40-libinput.conf /etc/grub.d/40_custom /etc/udev/rules.d /etc/systemd/system /etc/netctl"
 alias sysrestore="sudo tar -xvpzf $1 -C $2 --numeric-owner"
 alias sysupdate="sudo pacman -Syu; ~/bin/aurupdate && pkill -RTMIN+4 i3blocks"
 alias createusb="sudo dd bs=4M if=$1 of=$2 status=progress oflag=sync"
