@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="needs_terminal" mtime="1540343924" type="bool" value="false"/>
-	<entry name="enabled" mtime="1540343924" type="bool" value="true"/>
-	<entry name="command" mtime="1540343924" type="string">
-		<stringvalue>/opt/firefox-beta/firefox-bin %s</stringvalue>
-	</entry>
-</gconf>

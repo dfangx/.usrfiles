@@ -1,2 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a6/327_Integration/input_files'
+let g:netrw_dirhist_2='/home/arch/cyrusng/onedrive/year_3_2018-19/cisc327/a6/327_Integration/input_files/valid_services'
+let g:netrw_dirhist_3='/home/arch/cyrusng/bin'

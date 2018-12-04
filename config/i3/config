@@ -213,7 +213,7 @@ bindsym --release $mod+shift+s exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/pi
 bindsym $mod+shift+a sticky toggle
 
 ##############################Startup Scripts#############################################
-exec /usr/local/bin/hdmi_toggle
+exec ~/bin/hdmi_toggle
 exec --no-startup-id ~/bin/chgbackground 
 
 #############################Startup Apps#################################################
