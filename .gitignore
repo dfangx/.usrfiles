@@ -1,9 +1,15 @@
 config/*
 !config/i3
 !config/i3blocks
+config/i3blocks/i3blocklets/yad/yad_pid
+config/i3blocks/i3blocklets/yad/yad_state
 !config/conky
 !config/compton.conf
 !config/dunst
 !config/rofi
 !config/termite
 !config/user-dirs.dirs
+newsboat/*
+!newsboat/urls
+!newsboat/config
+vim/.netrwhist

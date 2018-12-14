@@ -140,7 +140,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="(?i)Firefox"] $ws2
 for_window [class="(?i)spotify"] move window to workspace $ws4
 assign [class="(?i)skype"] $ws5
-assign [class="(?i)baka-mplayer"] $ws4
+# assign [class="(?i)mpv"] $ws4
 assign [class="(?i)okular"] $ws3
 assign [class="(?i)soffice"] $ws3
 assign [class="libreoffice"] $ws3
@@ -169,7 +169,7 @@ bindsym mod1+o exec okular
 
 bindsym mod1+g exec steam
 
-bindsym mod1+c exec slack
+bindsym mod1+n [instance="(?i)rss"]scratchpad show; [instance="(?i)rss"] move position center
 
 bindsym mod1+w exec ~/bin/chgbackground
 
@@ -232,6 +232,10 @@ for_window [class="(?i)keepassxc"] move scratchpad
 exec --no-startup-id $term --name dropdown 
 for_window [instance="(?i)dropdown"] move scratchpad
 for_window [instance="(?i)dropdown"] resize set 800 300
+
+exec --no-startup-id $term --name rss -e "newsboat"
+for_window [instance="(?i)rss"] move scratchpad
+for_window [instance="(?i)rss"] resize set 900 500
 
 for_window [class="(?i)yad"] floating enable
 for_window [instance="(?i)pip"] floating enable;

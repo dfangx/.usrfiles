@@ -1,0 +1,15 @@
+auto-reload yes
+browser firefox-beta
+feed-sort-order firsttag
+reload-time 20
+
+bind-key l prev
+bind-key k next
+bind-key k down article
+bind-key l up article
+bind-key j prev-feed
+bind-key ; next-feed
+bind-key o open-in-browser-and-mark-read
+bind-key O open-in-browser
+
+macro o set browser "mpv -fs %u" ; open-in-browser-and-mark-read ; set browser firefox-beta

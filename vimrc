@@ -68,6 +68,12 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
+" Remaps hjkl to jkl;
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
 syntax enable
 set hidden
 set history=100
