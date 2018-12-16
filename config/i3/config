@@ -147,7 +147,7 @@ assign [class="libreoffice"] $ws3
 assign [class="(?i)steam"] $ws6
 assign [class="(?i)slack"] $ws5
 ##############################App Keybinds#################3##############################
-bindsym $mod+Return exec $term
+bindsym $mod+Return exec $term -e tmux
 
 bindsym mod1+m [instance="(?i)math"] scratchpad show; [instance="(?i)math"] move position center
 
@@ -217,7 +217,7 @@ exec ~/bin/hdmi_toggle
 exec --no-startup-id ~/bin/chgbackground 
 
 #############################Startup Apps#################################################
-exec $term 
+exec $term -e tmux 
 exec --no-startup-id compton -b
 exec i3lock -i ~/pictures/wallpapers/arch_linux.png --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025
 
