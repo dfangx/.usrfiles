@@ -174,7 +174,7 @@ bindsym mod1+n [instance="(?i)rss"]scratchpad show; [instance="(?i)rss"] move po
 bindsym mod1+w exec ~/bin/chgbackground
 
 ##############################Lock Screen Keybind#########################################
-bindsym $mod+mod1+l exec i3lock -B=10 --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
+bindsym $mod+mod1+l exec i3lock -i ~/pictures/wallpapers/zelda_symbol.jpg --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
 
 #############################Multimonitor Keybinds########################################
 bindsym control+mod1+Right exec xrandr --output HDMI2 --auto --right-of eDP1
