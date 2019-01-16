@@ -146,14 +146,22 @@ set number
 set relativenumber
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-" Omnicomplete
+" OMNICOMLETE
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-" File type specific settings
+" FILE TYPE SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " .tex file settings
 au FileType tex setl tw=150
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SNIPPETS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <space>html :-1r ~/.vim/skeletons/skeleton.html<CR>
+nnoremap <space>c :-1r ~/.vim/skeletons/skeleton.c<CR>
+nnoremap <space>java :-1r ~/.vim/skeletons/skeleton.java<CR>
+nnoremap <space>py :-1r ~/.vim/skeletons/skeleton.py<CR>
