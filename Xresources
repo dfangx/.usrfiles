@@ -1,8 +1,8 @@
 URxvt*scrollBar:false
 URxvt*depth:32
-URxvt*background:rgba:0000/0000/0000/8500
+URxvt*background: [50]#3c3c3c
 URxvt*foreground:#ffffff
-URxvt*font:xft:Hack:size=11,FontAwesome:size=11
+URxvt*font:xft:InconsolataGoNerdFont:size=13
 URxvt*internalBorder:10
 
 !URxvt*transparency:true
@@ -12,20 +12,18 @@ URxvt*internalBorder:10
 URxvt.perl-ext:
 URxvt.perl-ext-common:
 
-!URxvt*color0: Black
-!URxvt*color1: Red
-!URxvt*color2: Green
-!URxvt*color3: Yellow
-!URxvt*color4: Blue
-!URxvt*color4: Purple
-!URxvt*color5: Cyan
-!URxvt*color2: White
+*color0: Black
+*color1: Red
+*color2: Green
+*color3: Yellow
+*color4: Blue
+*color5: Cyan
 
-!URxvt*color8: #747474
-!URxvt*color9: #f99286
-!URxvt*color10: #c3f786
-!URxvt*color11: #ffff00
-URxvt*color12: #0061ff
-!URxvt*color13: #fba1fb
-!URxvt*color14: #d7d9fc
-!URxvt*color15: #e2e2e2 
+*color8: #747474
+*color9: #f99286
+*color10: #c3f786
+*color11: #ffff00
+*color12: #0061ff
+*color13: #fba1fb
+*color14: #d7d9fc
+*color15: #e2e2e2 

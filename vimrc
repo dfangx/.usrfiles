@@ -47,7 +47,7 @@ else
 
   set autoindent		" always set autoindenting on
 
-endif " has("autocmd")
+endif  "has("autocmd")
 
 " Add optional packages.
 "
@@ -60,26 +60,100 @@ if has('syntax') && has('eval')
 endif
 
 " Autocomplete quotes and brackets
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O
+" inoremap {;<CR> {<CR>};<ESC>O
 
-" Remaps hjkl to jkl;
-noremap ; l
-noremap l k
-noremap k j
-noremap j h
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" VIM GENERAL
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable Vi compatibility
+set nocompatible
 
+" Set path for vim
+set path+=**
+
+" Highlights line cursor is on
+set cursorline
+
+" Redraw screen only when necessary
+set lazyredraw
+
+" Show command in bottom bar
+set showcmd
+
+" Turn on wildmenu
+set wildmenu
+
+" Highlight matching parenthesis
+set showmatch
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" SYNTAX
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable syntax highlighting
 syntax enable
-set hidden
-set history=100
-set background=dark
+
+" Indentation per filetype
+filetype plugin indent on
+
+" Use colorscheme
 colorscheme cobalt
+hi Normal ctermbg=NONE
+
+" Set background to dark
+set background=dark
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" TABS 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Convert tabs to spaces
+set expandtab
+
+" Set tab equivalent to 4 spaces
+set tabstop=4
+set shiftwidth=4
+
+" Hide files in background instead of closing them
+set hidden
+
+" Set undo limit to 1000
+set history=1000
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FOLDS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable code folding
+set foldenable
+
+" Fold on indent
+set foldmethod=manual
+
+" Set starting fold level to 0
+set foldlevelstart=0
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LINE NUMBERS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display line numbers
 set number
 
-let g:powerline_pycmd="py3"
-set laststatus=2
+" Display relative line numbers
+set relativenumber
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Omnicomplete
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable omnicomplete
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" File type specific settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" .tex file settings
+au FileType tex setl tw=150

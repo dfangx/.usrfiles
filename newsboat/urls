@@ -17,6 +17,6 @@ https://www.reddit.com/r/technology/.rss reddit news technology ~r/technology
 https://www.reddit.com/r/Amd/.rss reddit amd news technology ~r/Amd
 https://www.reddit.com/r/unixporn/.rss reddit linux ~r/unixporn
 https://www.reddit.com/r/vim/.rss reddit vim ~r/vim
-https://www.reddit.com/r/firefox/.rss reddit browsers ~r/firefox
+https://www.reddit.com/r/firefox+FirefoxCSS.rss reddit browsers firefox ~r/firefox
 https://www.reddit.com/r/commandline/.rss reddit ~r/commandline
 https://www.reddit.com/r/signal/.rss reddit privacy signal ~r/signal

@@ -3,7 +3,7 @@
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = Hack 11
+font = Inconsolata 13
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -52,11 +52,11 @@ foreground = #ffffff
 background = rgba(60, 60, 60, 0.5)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+#highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 #color0 = #3f3f3f
-#color1 = #705050
+#color1 = #ff0000
 #color2 = #60b48a
 #color3 = #dfaf8f
 #color4 = #506070
@@ -65,7 +65,7 @@ highlight = #2f2f2f
 #color7 = #dcdccc
 #color8 = #709080
 #color9 = #dca3a3
-#color10 = #c3bf9f
+#color10 = #ff0000
 #color11 = #f0dfaf
 #color12 = #94bff3
 #color13 = #ec93d3

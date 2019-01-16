@@ -1,0 +1,10 @@
+#!/bin/bash
+
+dir=$1
+
+if [ -z "dir" ]; then
+    exit 1
+fi
+
+for f in $dir/*\ *; do mv "$f" "${f// /_}"; done
+for ff in $dir/*; do mv "$ff" "${ff,,}"; done

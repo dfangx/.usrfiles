@@ -1,0 +1,50 @@
+# Copyright 2018, "fffred" <fredpz@zoho.eu>
+
+# Primitivistical is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# Primitivistical is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with Primitivistical.  If not, see <https://www.gnu.org/licenses/>.
+
+title-text: ""
+desktop-color: "#000000"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ label {
+    id = "__timeout__"
+    text = "Booting in %d seconds"
+    top = 15%
+    left = 0
+    width = 100%
+    align = "center"
+    color = "#ddd"
+}
+
++ boot_menu {
+    left = 20%
+    top = 30%
+    width = 60%
+    height = 70%
+    item_font = "DejaVu Sans Regular 13"
+    icon_width = ICON_WIDTH
+    icon_height = ICON_HEIGHT
+    item_icon_space = ITEM_ICON_SPACE
+    item_height = ITEM_HEIGHT
+    item_spacing = ITEM_SPACING
+    item_color = "#ddd"
+    item_pixmap_style = "item_*.png"
+    selected_item_color = "#fff"
+    selected_item_pixmap_style = "selected_*.png"
+}
+

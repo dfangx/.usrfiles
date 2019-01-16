@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#SSID_NAME=$(iwgetid -r)
-
 INTERFACE="${BLOCK_INSTANCE:-wlan0}"
+SSID_NAME=$(iwgetid -r)
 
 #------------------------------------------------------------------------
 
@@ -82,8 +81,17 @@ else
 	up_color="#898989"
 fi
 
-echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
-echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
+dir=~/.config/i3blocks/i3blocklets/network
+network_state=$(cat $dir/network_state)
+ip_addr=$($dir/iface $INTERFACE)
+
+if [ "$network_state" = 0 ]; then
+    echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
+    echo " <span foreground='$down_color'> </span> <span foreground='$up_color'></span>"
+else
+    echo " $SSID_NAME ($ip_addr)"
+    echo " $SSID_NAME ($ip_addr)"
+fi
 echo $color
 # You can put any urgent name so the block will give warning
 # if a network with this name is used, like public wifi or alike.

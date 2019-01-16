@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir=~/downloads/build
+dir=/tmp/build
 
 echo Checking for build directory...
 if [ ! -d $dir ]; then

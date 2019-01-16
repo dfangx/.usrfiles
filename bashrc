@@ -4,8 +4,9 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
 
-PATH=$PATH:~/bin
+PATH=$PATH:~/bin:~/bin/aur
 export BROWSER="firefox-beta"
 
 curDate="[\d]"

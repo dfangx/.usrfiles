@@ -16,10 +16,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #------------------------------------------------------------------------
-
+INTERFACE=$1
 # Use the provided interface, otherwise the device used for the default route.
-if [[ -n $BLOCK_INSTANCE ]]; then
-  IF=$BLOCK_INSTANCE
+if [[ -n $INTERFACE ]]; then
+  IF=$INTERFACE
 else
   IF=$(ip route | awk '/^default/ { print $5 ; exit }')
 fi
@@ -57,4 +57,4 @@ esac
 
 #------------------------------------------------------------------------
 
-echo "IP Address: $IPADDR" # full text
+echo "$IPADDR" # full text
