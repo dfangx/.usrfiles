@@ -1,13 +1,19 @@
 #
 # ~/.bashrc
 #
+export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
+export BROWSER="firefox-beta"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
+
+stty -ixon
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+[[ -z "$TMUX" ]] && exec tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf
 
 PATH=$PATH:~/bin:~/bin/aur
-export BROWSER="firefox-beta"
 
 curDate="[\d]"
 machInfo="\u@\h"
@@ -20,3 +26,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 eval "$(dircolors -b ~/.dircolors)"
+

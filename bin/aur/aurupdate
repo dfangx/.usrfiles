@@ -1,6 +1,8 @@
 #!/bin/bash
 
 dir=/tmp/build
+special=st
+special_dir=~/.config/st
 
 echo Checking for build directory...
 if [ ! -d $dir ]; then
@@ -17,7 +19,13 @@ if [ $(ls $dir | wc -l) -gt 0 ]; then
 	for f in $dir/*; do
 		echo Creating package "$f"
 		cd $f
-		makepkg -si
+        if [ "$(basname $f)" == "$special" ]; then
+            echo "Copying configuration files..."
+            cp "$special_dir"/config.h "$special_dir"/PKGBUILD -t .
+            makepkg -si --skipchecksums
+        else
+		    makepkg -si
+        fi
 	done
 else
 	echo "No AUR packages"

@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-set $term termite
+set $term st
 set $mus_player spotify
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -130,27 +130,27 @@ assign [class="(?i)Firefox"] $ws2
 
 ##############################App Keybinds#################3##############################
 bindsym $mod+Return exec $term
-bindsym mod1+w exec ~/bin/chgbackground
-bindsym mod1+f exec firefox-beta
+bindsym $mod+i exec ~/bin/chgbackground
+bindsym $mod+f exec firefox-beta
 
-bindsym mod1+m [instance="(?i)math"] scratchpad show; [instance="(?i)math"] move position center
-bindsym mod1+d [instance="(?i)dropdown"] scratchpad show; [instance="(?i)dropdown"] move position center
-bindsym mod1+s [class="(?i)spotify"] scratchpad show; [class="(?i)spotify"] move position center
-bindsym mod1+k  [class="(?i)keepassxc"] scratchpad show; [class="(?i)keepassxc"] move position center
-bindsym mod1+n [instance="(?i)rss"]scratchpad show; [instance="(?i)rss"] move position center
+bindsym $mod+m [instance="(?i)math"] scratchpad show; [instance="(?i)math"] move position center
+bindsym $mod+t [instance="(?i)dropdown"] scratchpad show; [instance="(?i)dropdown"] move position center
+bindsym $mod+u [class="(?i)spotify"] scratchpad show; [class="(?i)spotify"] move position center
+bindsym $mod+p  [class="(?i)keepassxc"] scratchpad show; [class="(?i)keepassxc"] move position center
+bindsym $mod+n [instance="(?i)rss"]scratchpad show; [instance="(?i)rss"] move position center
 # bindsym mod1+l exec libreoffice
 # bindsym mod1+o exec okular
 # bindsym mod1+g exec steam
 
 ##############################Lock Screen Keybind#########################################
-bindsym $mod+mod1+l exec i3lock -i ~/pictures/wallpapers/zelda_symbol.jpg --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
+bindsym $mod+mod1+s exec i3lock -i ~/pictures/wallpapers/zelda_symbol.jpg --verifsize=32 --wrongsize=32 --force-clock --bar-indicator --timesize=128 --keylayout 0 --ringwrongcolor=ff0000ff --layoutcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --verifcolor=ffffffff --wrongcolor=ffffffff --ringvercolor=ffff00ff --timepos=300:950 --datepos=200:1025 --datesize=32 --layoutsize=32 --layoutpos=1750:1025 
 
 #############################Multimonitor Keybinds########################################
-bindsym control+mod1+Right exec xrandr --output HDMI2 --auto --right-of eDP1
-bindsym control+mod1+Left exec xrandr --output HDMI2 --auto --left-of eDP1
-bindsym control+mod1+Up exec xrandr --output HDMI2 --auto --above eDP1
-bindsym control+mod1+Down exec xrandr --output HDMI2 --auto --below eDP1
-bindsym control+mod1+Return exec xrandr --output HDMI2 --auto --same-as eDP1
+bindsym $mod+mod1+l exec xrandr --output HDMI2 --auto --right-of eDP1
+bindsym $mod+mod1+h exec xrandr --output HDMI2 --auto --left-of eDP1
+bindsym $mod+mod1+k exec xrandr --output HDMI2 --auto --above eDP1
+bindsym $mod+mod1+j exec xrandr --output HDMI2 --auto --below eDP1
+bindsym $mod+mod1+Return exec xrandr --output HDMI2 --auto --same-as eDP1
 
 ##############################Multimedia keybinds#########################################
 bindsym XF86AudioLowerVolume exec amixer set Master 2%-; exec pkill -RTMIN+1 i3blocks
@@ -159,8 +159,8 @@ bindsym XF86AudioMute exec amixer set Master toggle; exec pkill -RTMIN+1 i3block
 
 
 bindsym Pause exec playerctl play-pause
-bindsym $mod+mod1+Right exec playerctl next
-bindsym $mod+mod1+Left exec playerctl previous
+bindsym $mod+mod1+n exec playerctl next
+bindsym $mod+mod1+p exec playerctl previous
 ##############################Brightness and Backlight Keybinds###########################
 bindsym XF86MonBrightnessUp exec xbacklight + 5; exec pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessDown exec xbacklight - 5; exec pkill -RTMIN+2 i3blocks
@@ -171,7 +171,9 @@ bindsym XF86KbdBrightnessDown exec ~/bin/kb_light.py - 1
 ##############################Status Bar#################################################
 bindsym $mod+mod1+t exec ~/.config/i3blocks/i3blocklets/time/change_state  
 bindsym $mod+mod1+b exec ~/.config/i3blocks/i3blocklets/battery/change_state
-bindsym $mod+mod1+n exec ~/.config/i3blocks/i3blocklets/network/change_state
+bindsym $mod+mod1+i exec ~/.config/i3blocks/i3blocklets/network/change_state
+bindsym $mod+mod1+u exec ~/.config/i3blocks/i3blocklets/updates/change_state; exec pkill -RTMIN+4 i3blocks
+bindsym $mod+mod1+a exec ~/.config/i3blocks/i3blocklets/system/change_state
 
 ##############################Miscellaneous Keybinds######################################
 bindsym --release $mod+shift+s exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/pictures/screenshots/' 
@@ -186,18 +188,18 @@ exec $term
 exec --no-startup-id compton -b
 
 ##############################Scratchpads#################################################
-exec --no-startup-id $term --name math -e "python -q"
+exec --no-startup-id $term -n math -e python -q
 for_window [instance="(?i)math"] move scratchpad
 for_window [instance="(?i)math"] resize set 600 300
 
 exec --no-startup-id keepassxc
 for_window [class="(?i)keepassxc"] move scratchpad
 
-exec --no-startup-id $term --name dropdown 
+exec --no-startup-id $term -n dropdown 
 for_window [instance="(?i)dropdown"] move scratchpad
 for_window [instance="(?i)dropdown"] resize set 800 300
 
-exec --no-startup-id $term --name rss -e "newsboat"
+exec --no-startup-id $term -n rss -e newsboat
 for_window [instance="(?i)rss"] move scratchpad
 for_window [instance="(?i)rss"] resize set 900 500
 

@@ -30,7 +30,6 @@ markup=pango
 
 [updates]
 interval=1800
-command=~/.config/i3blocks/i3blocklets/system/updates
 signal=4
 border_top=0
 border_left=0
